@@ -1,0 +1,21 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+.h_search{
+	width: 450px;
+	height: 130px;
+	background: red;
+	padding-left: 0;
+	border: 1px solid #00BFA5;
+	overflow-x: auto;
+	
+}
+li{
+	list-style: none;
+}
+.h_search li{
+	text-indent: 10px;
+	padding: 10px 0;
+	border-bottom:1px solid #00BFA5 ;
+}
