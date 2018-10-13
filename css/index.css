@@ -23,173 +23,13 @@ li{
     box-shadow: 0 0 35px #e3e3e3;
 }
 
-/* contant下的第一部分
-con_head开始 */
-.con_head{
-    padding: 0 54px;
-    overflow: hidden;
-}
-.con_head img:first-child{
-    margin-left: 15px;
-    width: 243px;
-    height: 83px;
-    float: left;
-}
-.search{
-    font-size: 12px;
-    margin-top: 30px;
-    float: left;
-    padding: 0 70px;
-    color: #8d8d8d;
-    position: relative;
-}
-.con_head input:first-child{
-    text-indent: 8px;
-    border: none;
-    outline: none;
-    width: 402px;
-    height: 25px;
-    background: url(../img/searchlist.png);
-    background-size: 402px 25px;
-}
-.search .btn{
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    left: 430px;
-    width: 40px;
-    height: 24px;
-    background: url(../img/icons.png);
-    background-position: -606px 898px;
-    border: none;
-    outline: none;
-}
-.search p{
-    line-height: 38px;
-}
-.search a{
-    color: #8d8d8d;
-    padding: 0 3px;
-}
-#logo_jinqiu{
-    margin-top: 30px;
-    width: 110px;
-    height: 51px;
-    float: left;
-    margin-right: 45px;
-}
-.car{
-    margin-top: -50px;
-    width: 121px;
-    line-height: 39px;
-    height: 39px;
-    color: #009c4c;
-    border: 1px solid #009c4c;
-    float: right;
-    position: relative;
-}
-.car .car_i{
-    float: left;
-    margin:0 3px 0 13px; 
-    width: 27px;
-    height: 39px;
-    background: url(../img/icons.png);
-    background-position: -475px 143px;
-}
-.car p{
-    line-height: 39px;
-}
-.car b{
-    color: white;
-    display: inline-block;
-    line-height: 20px;
-    position: absolute;
-    top: 1px;
-    right: 4px;
-    min-width: 20px;
-    height: 20px;
-    text-align: center;
-    background: #f07641;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    border-radius: 50%;
-}
-/* contant下的第一部分
-con_nav开始 */
-.con_nav{
-    margin-top: 15px;
-    width: 1200px;
-    height: 45px;
-    font-size: 16px;
-    line-height: 45px;
-    color: #333333;
-}
-.con_nav a{
-    padding: 12px 20px;
-    color: #333333;
-}
-.con_nav a:nth-child(1){
-    padding-left: 68px;
-}
-.con_nav i{
-    display: inline-block;
-    margin-left: 58px;
-    width: 12px;
-    height: 12px;
-    background: url(../img/icons.png);
-    background-position: 449px 327px;
-}
-.con_nav a:hover{
-    background: #e0e0e0;
-    text-decoration: none;
-}
-.con_nav a:nth-child(2),.con_nav a:nth-child(3){
-    position: relative;
-}
-.con_nav a b{
-    width: 36px;
-    height: 24px;
-    position: absolute;
-    top: -11px;
-    left: 57px;
-}
+
 /* contant下的第一部分
 con_banner开始 */
 .con_banner{
     width: 100%;
     height: 430px;
     background: url(../img/banner1.jpg);
-}
-.uls li{
-    text-align: center;
-    width: 222px;
-    height: 30px;
-    font-size: 14px;
-    line-height: 30px;
-    color: #e0e0e0;
-    background: rgba(233, 232, 233, .7);
-    border-bottom: 1px solid white;
-}
-.uls li a{
-    color: #333;
-    text-decoration: none;
-}
-.con_banner .uls li:hover a{
-    color: #009c4c;
-}
-.con_banner .uls li:hover strong{
-    margin-right: 25px;
-    background: url(../img/icons.png);
-    background-position:93px 189px;
-}
-.uls strong{
-    width: 7px;
-    height: 11px;
-    float: right;
-    margin: 9px 22px 0 0 ;
-    background: url(../img/icons.png);
-    background-position: 110px 189px;
 }
 /* contant下的第一部分
 con_banner开始 */
@@ -202,7 +42,7 @@ con_banner开始 */
     width: 397px;
     float: left;
     position: relative;
-    /* overflow: hidden; */
+     overflow: hidden; 
 }
 .show_box:nth-child(2){
 	margin: 0 2px;
@@ -227,8 +67,13 @@ con_banner开始 */
     opacity: .4;
     height: 268px;
     width: 397px;
-    /* z-index: 1;
-    display: none; */
+     z-index: 1;
+    display: none; 
+}
+.show_one_zhe h1{
+	font-size: 28px;
+	color: white;
+
 }
 //
 .con_imgbox{

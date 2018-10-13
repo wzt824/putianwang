@@ -5,312 +5,26 @@
     <title>甫田网-给家人的每一餐 都安心美味</title>
     <link rel="stylesheet" type="text/css" href="css/index.css" />
     <link rel="stylesheet" type="text/css" href="css/public.css" />
+    <link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
 </head>
+<script src="js/jquery-1.8.3.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/slider.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/searchBox.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/masking.js" type="text/javascript" charset="utf-8"></script>
+
+
 <body>
-    <header>
-        <div class="head">
-            <div class="h_left">
-                <div class="h_head">   
-                    欢迎来访，
-                    <a href="#">登录</a>|
-                    <a href="#">注册</a>
-                </div>
-                <div class="h_delivery">
-                	<div class="h_del_top">                		
-                    	配送至:
-	                    <b><a href="#">北京</a></b>
-	                    <i></i>
-                	</div>
-                	<ul class="h_search">
-						<li>
-							<a href="#"><input class="h_search_tp" type="button" /></a>
-							<input class="h_search_tit" type="text" placeholder="搜索" />
-						</li>
-						<li>
-							<div class="h_search_f">
-								<span>热门城市：</span>
-							</div>
-							<div class="h_search_r">
-								<a href="#">南京</a>
-								<a href="#">宁波</a>
-								<a href="#">杭州</a>
-								<a href="#">苏州</a>
-								<a href="#">上海</a>
-							</div>
-						</li>
-						<li>
-							<div class="h_search_f">
-								<span>A</span>
-							</div>
-							<div class="h_search_r">
-								<a href="#">安徽</a>
-							</div>
-						</li>
-						<li>
-							<div class="h_search_f">
-								<span>B</span>
-							</div>
-							<div class="h_search_r">
-								<a href="#">北京</a>
-							</div>
-						</li>
-						<li>
-							<div class="h_search_f">
-								<span>C</span>
-							</div>
-							<div class="h_search_r">
-								<a href="#">重庆</a>
-							</div>
-						</li>
-						<li>
-							<div class="h_search_f">
-								<span>F</span>
-							</div>
-							<div class="h_search_r">
-								<a href="#">福建</a>
-							</div>
-						</li>
-						<li>
-							<div class="h_search_f">
-								<span>G</span>
-							</div>
-							<div class="h_search_r">
-								<a href="#">甘肃</a>
-								<a href="#">广东</a>
-								<a href="#">广西</a>
-								<a href="#">贵州</a>
-							</div>
-						</li>
-						<li>
-							<div class="h_search_f">
-								<span>H</span>
-							</div>
-							<div class="h_search_r">
-								<a href="#">海南</a>
-								<a href="#">河北</a>
-								<a href="#">黑龙江</a>
-								<a href="#">湖北</a>
-								<a href="#">湖南</a>
-							</div>
-						</li>
-						<li>
-							<div class="h_search_f">
-								<span>J</span>
-							</div>
-							<div class="h_search_r">
-								<a href="#">江苏</a>
-								<a href="#">江西</a>
-								<a href="#">吉林</a>
-							</div>
-						</li>
-						<li>
-							<div class="h_search_f">
-								<span>L</span>
-							</div>
-							<div class="h_search_r">
-								<a href="#">辽宁</a>
-							</div>
-						</li>
-						<li>
-							<div class="h_search_f">
-								<span>N</span>
-							</div>
-							<div class="h_search_r">
-								<a href="#">内蒙</a>
-								<a href="#">宁夏</a>
-							</div>
-						</li>
-						<li>
-							<div class="h_search_f">
-								<span>S</span>
-							</div>
-							<div class="h_search_r">
-								<a href="#">陕西</a>
-								<a href="#">山东</a>
-								<a href="#">上海</a>
-								<a href="#">山西</a>
-								<a href="#">四川</a>
-							</div>
-						</li>
-						<li>
-							<div class="h_search_f">
-								<span>T</span>
-							</div>
-							<div class="h_search_r">
-								<a href="#">天津</a>
-							</div>
-						</li>
-						<li>
-							<div class="h_search_f">
-								<span>Y</span>
-							</div>
-							<div class="h_search_r">
-								<a href="#">云南</a>
-							</div>
-						</li>
-						<li>
-							<div class="h_search_f">
-								<span>Z</span>
-							</div>
-							<div class="h_search_r">
-								<a href="#">浙江</a>
-							</div>
-						</li>
-					</ul>
-                </div>
-            </div>
-            <ul class="h_nav">
-                <li>
-                    <a href="#">我的收藏</a>
-                </li>
-                <li>
-                    <a href="#">我的订单</a>
-                </li>
-                <li class="h_public_uls">
-                    <p>
-                        <a id="h_me" href="#">我的账户</a>
-                        <i></i>
-                    </p>
-                    <div class="h_nav_top">
-                        <a href="#">充值特惠</a>
-                        <a href="#">优惠券</a>
-                        <a href="#">我的余额</a>
-                        <a href="#">礼品卡</a>
-                    </div>
-                </li>
-                <li class="h_public_uls">
-                    <p>
-                        <s></s>
-                        <a href="#">手机莆田</a>
-                        <i></i>
-                    </p>
-                    <div class="h_nav_top h_nav_top_app">
-                        下载app
-                        <img id="app" src="img/down-app.png" alt="">
-                    </div>
-                </li>
-                <li class="h_public_uls">
-                    <p>
-                        <a href="#">关注莆田</a>
-                        <i></i>
-                    </p>
-                    <div class="h_nav_top h_nav_top_app">
-                        <p class="enjoy">
-                            <a href="#"><span class="eni weixin"></span></a>
-                            <a href="#"><span class="eni weibo"></span></a>
-                        </p>
-                        <img src="img/weixin-zh.png" alt="">
-                    </div>
-                </li>
-                <li class="h_public_uls">
-                    <p>
-                        <a href="#">EN</a>
-                        <em></em>
-                        <i></i>
-                    </p>
-                    <ul class="h_nav_top select_guo">
-                        <li><a href="#"><ol></ol><p>简体中文</p></a></li>
-                        <li><a href="#"><ol></ol><p>English</p></a></li>
-                        <li><a href="#"><ol></ol><p>Francais</p></a></li>
-                        <li><a href="#"><ol></ol><p>日本語</p></a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </header>
+	
+	<div class="headerBox">
+		<!--header  部分-->
+	</div>
     <div class="contant">
-        <div class="con_head">
-            <a href="#"><img src="img/logo.jpg" alt=""></a>
-            <div class="search">
-                <input type="text" placeholder="大闸蟹">
-                <input type="button" class="btn">
-                <p>热门搜索：
-                    <a href="#">礼盒</a>
-                    <a href="#">石榴</a>
-                    <a href="#">柚</a>
-                    <a href="#">大米</a>
-                    <a href="#">奶酪</a>
-                </p>
-            </div>
-            <a href="#"><img id="logo_jinqiu" src="img/logo_jinqiu.jpg" alt=""></a>
-            <a href="#">
-                <div class="car">               
-                    <i class="car_i"></i>
-                    <p>购物车</p>
-                    <b>0</b>
-                </div>
-            </a>
+    	
+        <div class="contantBox">
+        	<!--con_head、con_nav、con_scroll 部分-->
         </div>
-        <div class="con_nav">
-            <a href="#">全部分类<i></i></a>
-            <a href="#">买一得二<b><img src="img/hot-icon.png" alt=""></b></a>
-            <a href="#">24小时鲜<b><img src="img/new-icon.png" alt=""></b></a>
-            <a href="#">本周特惠</a>
-            <a href="#">热卖新品</a>
-            <a href="#">临期特惠</a>
-            <a href="#">VIP商城</a>
-            <a href="#">企业福利</a>
-            <a href="#">礼品盒预售卡</a>
-        </div>
-        <div class="con_banner">
-            <ul class="uls">
-                <li>
-                    <a href="#">大厨美食</a>
-                    <strong></strong>
-                </li>
-                <li>
-                    <a href="#">美味秋季</a>
-                    <strong></strong>
-                </li>
-                <li>
-                    <a href="#">田园时蔬</a>
-                    <strong></strong>
-                </li>
-                <li>
-                    <a href="#">精选肉类</a>
-                    <strong></strong>
-                </li>
-                <li>
-                    <a href="#">新鲜水果</a>
-                    <strong></strong>
-                </li>
-                <li>
-                    <a href="#">海鲜水产</a>
-                    <strong></strong>
-                </li>
-                <li>
-                    <a href="#">蛋奶乳品</a>
-                    <strong></strong>
-                </li>
-                <li>
-                    <a href="#">面包烘培</a>
-                    <strong></strong>
-                </li>
-                <li>
-                    <a href="#">快手熟食</a>
-                    <strong></strong>
-                </li>
-                <li>
-                    <a href="#">粮油杂货</a>
-                    <strong></strong>
-                </li>
-                <li>
-                    <a href="#">饮料酒水</a>
-                    <strong></strong>
-                </li>
-                <li>
-                    <a href="#">轻食生活</a>
-                    <strong></strong>
-                </li>
-                <li>
-                    <a href="#">个人护理&母婴</a>
-                    <strong></strong>
-                        </li>
-                <li>
-                    <a href="#">家庭用品&宠物</a>
-                    <strong></strong>
-                </li>
-            </ul>
+        <div id="con_banner" class="con_banner" style="position: relative;">
+            
         </div>
         <div class="con_show">
             <div class="show_box">
@@ -321,13 +35,16 @@
             </div>
             <div class="show_box">
                 <div class="show_one_img">
-                    <img src="img/product_one.png" alt="">
-                    <div class="show_one_zhe"></div>
+                    <img src="img/pc_adbox_1.jpg" alt="">
+                    <div class="show_one_zhe">
+                    	<h1>超值团购回馈</h1>
+                    	<h1>错过后会无期</h1>
+                    </div>
                 </div>
             </div>
             <div class="show_box">
                 <div class="show_one_img">
-                    <img src="img/product_one.png" alt="">
+                    <img src="img/PC1ADBOX (1).jpg" alt="">
                     <div class="show_one_zhe"></div>
                 </div>
             </div>
@@ -354,54 +71,54 @@
         						<a href="#"><p class="public_imgBox_title" >美国&澳洲 安格斯牛肉 家庭组合</p></a>
         						<p id="zhongliang">1.45kg</p>
         						<p id="price">￥318 <del>￥628</del></p>
-        						<div class="public_caricons"></div>
+        						<a href="#"><div class="public_caricons"></div></a>
         					</div>
         				</li>
         				<li>
         					<div class="public_imgBox">
-        						<a href="#"><img src="img/1536596681346017.jpg"/></a><br/>
-        						<a href="#"><p class="public_imgBox_title" >美国&澳洲 安格斯牛肉合</p></a>
-        						<p id="zhongliang">1.45kg</p>
-        						<p id="price">￥318 <del>￥628</del></p>
-        						<div class="public_caricons"></div>
+        						<a href="#"><img src="img/1498471576955110.jpg"/></a><br/>
+        						<a href="#"><p class="public_imgBox_title" > 拓食 生冻黑虎虾 </p></a>
+        						<p id="zhongliang">400g</p>
+        						<p id="price">￥65 <del>￥79</del></p>
+        						<a href="#"><div class="public_caricons"></div></a>
         					</div>
         				</li>
         				<li>
         					<div class="public_imgBox">
-        						<a href="#"><img src="img/1536596681346017.jpg"/></a><br/>
-        						<a href="#"><p class="public_imgBox_title" >美国&澳洲 安格斯牛肉合</p></a>
-        						<p id="zhongliang">1.45kg</p>
-        						<p id="price">￥318 <del>￥628</del></p>
-        						<div class="public_caricons"></div>
+        						<a href="#"><img src="img/1537286672693562.jpg"/></a><br/>
+        						<a href="#"><p class="public_imgBox_title" > 辣西西里干酪 </p></a>
+        						<p id="zhongliang">200g</p>
+        						<p id="price">￥49 </p>
+        						<a href="#"><div class="public_caricons"></div></a>
         					</div>
         				</li>
         			</ul>
         			<ul class="uls_two">
         				<li>
         					<div class="public_imgBox">
-        						<a href="#"><img src="img/1536596681346017.jpg"/></a><br/>
-        						<a href="#"><p class="public_imgBox_title" >美国&澳洲 安格斯牛肉 家庭组合</p></a>
-        						<p id="zhongliang">1.45kg</p>
-        						<p id="price">￥318 <del>￥628</del></p>
-        						<div class="public_caricons"></div>
+        						<a href="#"><img src="img/1537984152749308.jpg"/></a><br/>
+        						<a href="#"><p class="public_imgBox_title" >民仁堂蟹黄小馄饨 </p></a>
+        						<p id="zhongliang">110g</p>
+        						<p id="price">￥15</p>
+        						<a href="#"><div class="public_caricons"></div></a>
         					</div>
         				</li>
         				<li>
         					<div class="public_imgBox">
-        						<a href="#"><img src="img/1536596681346017.jpg"/></a><br/>
-        						<a href="#"><p class="public_imgBox_title" >美国&澳洲 安格斯牛肉合</p></a>
-        						<p id="zhongliang">1.45kg</p>
-        						<p id="price">￥318 <del>￥628</del></p>
-        						<div class="public_caricons"></div>
+        						<a href="#"><img src="img/1533635369540875.jpg"/></a><br/>
+        						<a href="#"><p class="public_imgBox_title" > 大地物源松茸饼干</p></a>
+        						<p id="zhongliang">180g</p>
+        						<p id="price">￥88</p>
+        						<a href="#"><div class="public_caricons"></div></a>
         					</div>
         				</li>
         				<li>
         					<div class="public_imgBox">
-        						<a href="#"><img src="img/1536596681346017.jpg"/></a><br/>
-        						<a href="#"><p class="public_imgBox_title" >美国&澳洲 安格斯牛肉合</p></a>
-        						<p id="zhongliang">1.45kg</p>
-        						<p id="price">￥318 <del>￥628</del></p>
-        						<div class="public_caricons"></div>
+        						<a href="#"><img src="img/1531244444111628.jpg"/></a><br/>
+        						<a href="#"><p class="public_imgBox_title" >内瑞雅天然饮用水1.5L*6</p></a>
+        						<p id="zhongliang">1.5升*6</p>
+        						<p id="price">￥70 <del>￥115</del></p>
+        						<a href="#"><div class="public_caricons"></div></a>
         					</div>
         				</li>
         			</ul>
@@ -410,11 +127,81 @@
         </div>
         <div class="con_pulic">
         	<div class="public_top">
-        		<a href="#"><img src="img/meiweituijian.jpg"/></a>
+        		<a href="#"><img src="img/xianshicuxiao.jpg"/></a>
         	</div>
         	<div class="public_bot">
         		<div class="public_left">
-        			<a href="#"><img src="img/cereal_cn_pc_kv.jpg"/></a>
+        			<a href="#"><img src="img/fruit_cn_pc_kv.jpg"/></a>
+        		</div>
+        		<div class="public_right">
+        			<ul>
+        				<li>
+        					<div class="public_imgBox">
+        						<a href="#"><img src="img/1533574606246913.jpg"/></a><br/>
+        						<a href="#"><p class="public_imgBox_title" >鲜肉笋丁糍毛团  </p></a>
+        						<p id="zhongliang">80g*6</p>
+        						<p id="price">￥5 <del>￥30</del></p>
+        						<a href="#"><a href="#"><div class="public_caricons"></div></a></a>
+        					</div>
+        				</li>
+        				<li>
+        					<div class="public_imgBox">
+        						<a href="#"><img src="img/1466615937475028.jpg"/></a><br/>
+        						<a href="#"><p class="public_imgBox_title" >FIELDS精选 刺黄瓜</p></a>
+        						<p id="zhongliang">400kg</p>
+        						<p id="price">￥5 <del>￥6</del></p>
+        						<a href="#"><a href="#"><div class="public_caricons"></div></a></a>
+        					</div>
+        				</li>
+        				<li>
+        					<div class="public_imgBox">
+        						<a href="#"><img src="img/1478266325288472.jpg"/></a><br/>
+        						<a href="#"><p class="public_imgBox_title" >缸鸭狗土猪肉包 </p></a>
+        						<p id="zhongliang">40g*</p>
+        						<p id="price">￥20 <del>￥26</del></p>
+        						<a href="#"><div class="public_caricons"></div></a>
+        					</div>
+        				</li>
+        			</ul>
+        			<ul class="uls_two">
+        				<li>
+        					<div class="public_imgBox">
+        						<a href="#"><img src="img/1424962713402531.jpg"/></a><br/>
+        						<a href="#"><p class="public_imgBox_title" >Perrier 巴黎水 含气柠檬味饮料（330ml*24） </p></a>
+        						<p id="zhongliang">330毫升*24</p>
+        						<p id="price">￥258 <del>￥289</del></p>
+        						<a href="#"><div class="public_caricons"></div></a>
+        					</div>
+        				</li>
+        				<li>
+        					<div class="public_imgBox">
+        						<a href="#"><img src="img/1537179978703180.jpg"/></a><br/>
+        						<a href="#"><p class="public_imgBox_title" >一分钟 自制能多益巧克力蛋糕套餐</p></a>
+        						<p id="zhongliang">350克+50克</p>
+        						<p id="price">￥33 <del>￥36</del></p>
+        						<a href="#"><div class="public_caricons"></div></a>
+        					</div>
+        				</li>
+        				<li>
+        					<div class="public_imgBox">
+        						<a href="#"><img src="img/1512056193854180.jpg"/></a><br/>
+        						<a href="#"><p class="public_imgBox_title" >干式熟成21天 和牛 带骨西冷（M4-5)</p></a>
+        						<p id="zhongliang">300g</p>
+        						<p id="price">￥155 <del>￥258</del></p>
+        						<a href="#"><div class="public_caricons"></div></a>
+        					</div>
+        				</li>
+        			</ul>
+        		</div>
+        	</div>
+        </div>
+        <div class="con_pulic">
+        	<div class="public_top">
+        		<a href="#"><img src="img/remaixinpin.jpg"/></a>
+        	</div>
+        	<div class="public_bot">
+        		<div class="public_left">
+        			<a href="#"><img src="img/web_pc_kv_358_666.jpg"/></a>
         		</div>
         		<div class="public_right">
         			<ul>
@@ -424,25 +211,25 @@
         						<a href="#"><p class="public_imgBox_title" >美国&澳洲 安格斯牛肉 家庭组合</p></a>
         						<p id="zhongliang">1.45kg</p>
         						<p id="price">￥318 <del>￥628</del></p>
-        						<div class="public_caricons"></div>
+        						<a href="#"><div class="public_caricons"></div></a>
         					</div>
         				</li>
         				<li>
         					<div class="public_imgBox">
         						<a href="#"><img src="img/1536596681346017.jpg"/></a><br/>
-        						<a href="#"><p class="public_imgBox_title" >美国&澳洲 安格斯牛肉合</p></a>
+        						<a href="#"><p class="public_imgBox_title" >优惠券使用</p></a>
         						<p id="zhongliang">1.45kg</p>
         						<p id="price">￥318 <del>￥628</del></p>
-        						<div class="public_caricons"></div>
+        						<a href="#"><div class="public_caricons"></div></a>
         					</div>
         				</li>
         				<li>
         					<div class="public_imgBox">
         						<a href="#"><img src="img/1536596681346017.jpg"/></a><br/>
-        						<a href="#"><p class="public_imgBox_title" >美国&澳洲 安格斯牛肉合</p></a>
+        						<a href="#"><p class="public_imgBox_title" >优惠券使用</p></a>
         						<p id="zhongliang">1.45kg</p>
         						<p id="price">￥318 <del>￥628</del></p>
-        						<div class="public_caricons"></div>
+        						<a href="#"><div class="public_caricons"></div></a>
         					</div>
         				</li>
         			</ul>
@@ -453,25 +240,25 @@
         						<a href="#"><p class="public_imgBox_title" >美国&澳洲 安格斯牛肉 家庭组合</p></a>
         						<p id="zhongliang">1.45kg</p>
         						<p id="price">￥318 <del>￥628</del></p>
-        						<div class="public_caricons"></div>
+        						<a href="#"><div class="public_caricons"></div></a>
         					</div>
         				</li>
         				<li>
         					<div class="public_imgBox">
         						<a href="#"><img src="img/1536596681346017.jpg"/></a><br/>
-        						<a href="#"><p class="public_imgBox_title" >美国&澳洲 安格斯牛肉合</p></a>
+        						<a href="#"><p class="public_imgBox_title" >优惠券使用</p></a>
         						<p id="zhongliang">1.45kg</p>
         						<p id="price">￥318 <del>￥628</del></p>
-        						<div class="public_caricons"></div>
+        						<a href="#"><div class="public_caricons"></div></a>
         					</div>
         				</li>
         				<li>
         					<div class="public_imgBox">
         						<a href="#"><img src="img/1536596681346017.jpg"/></a><br/>
-        						<a href="#"><p class="public_imgBox_title" >美国&澳洲 安格斯牛肉合</p></a>
+        						<a href="#"><p class="public_imgBox_title" >优惠券使用</p></a>
         						<p id="zhongliang">1.45kg</p>
         						<p id="price">￥318 <del>￥628</del></p>
-        						<div class="public_caricons"></div>
+        						<a href="#"><div class="public_caricons"></div></a>
         					</div>
         				</li>
         			</ul>
@@ -480,11 +267,11 @@
         </div>
         <div class="con_pulic">
         	<div class="public_top">
-        		<a href="#"><img src="img/meiweituijian.jpg"/></a>
+        		<a href="#"><img src="img/24146792151408404.jpg"/></a>
         	</div>
         	<div class="public_bot">
         		<div class="public_left">
-        			<a href="#"><img src="img/cereal_cn_pc_kv.jpg"/></a>
+        			<a href="#"><img src="img/cn_pc_kv.jpg"/></a>
         		</div>
         		<div class="public_right">
         			<ul>
@@ -494,25 +281,25 @@
         						<a href="#"><p class="public_imgBox_title" >美国&澳洲 安格斯牛肉 家庭组合</p></a>
         						<p id="zhongliang">1.45kg</p>
         						<p id="price">￥318 <del>￥628</del></p>
-        						<div class="public_caricons"></div>
+        						<a href="#"><div class="public_caricons"></div></a>
         					</div>
         				</li>
         				<li>
         					<div class="public_imgBox">
         						<a href="#"><img src="img/1536596681346017.jpg"/></a><br/>
-        						<a href="#"><p class="public_imgBox_title" >美国&澳洲 安格斯牛肉合</p></a>
+        						<a href="#"><p class="public_imgBox_title" >优惠券使用</p></a>
         						<p id="zhongliang">1.45kg</p>
         						<p id="price">￥318 <del>￥628</del></p>
-        						<div class="public_caricons"></div>
+        						<a href="#"><div class="public_caricons"></div></a>
         					</div>
         				</li>
         				<li>
         					<div class="public_imgBox">
         						<a href="#"><img src="img/1536596681346017.jpg"/></a><br/>
-        						<a href="#"><p class="public_imgBox_title" >美国&澳洲 安格斯牛肉合</p></a>
+        						<a href="#"><p class="public_imgBox_title" >优惠券使用</p></a>
         						<p id="zhongliang">1.45kg</p>
         						<p id="price">￥318 <del>￥628</del></p>
-        						<div class="public_caricons"></div>
+        						<a href="#"><div class="public_caricons"></div></a>
         					</div>
         				</li>
         			</ul>
@@ -523,25 +310,25 @@
         						<a href="#"><p class="public_imgBox_title" >美国&澳洲 安格斯牛肉 家庭组合</p></a>
         						<p id="zhongliang">1.45kg</p>
         						<p id="price">￥318 <del>￥628</del></p>
-        						<div class="public_caricons"></div>
+        						<a href="#"><div class="public_caricons"></div></a>
         					</div>
         				</li>
         				<li>
         					<div class="public_imgBox">
         						<a href="#"><img src="img/1536596681346017.jpg"/></a><br/>
-        						<a href="#"><p class="public_imgBox_title" >美国&澳洲 安格斯牛肉合</p></a>
+        						<a href="#"><p class="public_imgBox_title" >优惠券使用</p></a>
         						<p id="zhongliang">1.45kg</p>
         						<p id="price">￥318 <del>￥628</del></p>
-        						<div class="public_caricons"></div>
+        						<a href="#"><div class="public_caricons"></div></a>
         					</div>
         				</li>
         				<li>
         					<div class="public_imgBox">
         						<a href="#"><img src="img/1536596681346017.jpg"/></a><br/>
-        						<a href="#"><p class="public_imgBox_title" >美国&澳洲 安格斯牛肉合</p></a>
+        						<a href="#"><p class="public_imgBox_title" >优惠券使用</p></a>
         						<p id="zhongliang">1.45kg</p>
         						<p id="price">￥318 <del>￥628</del></p>
-        						<div class="public_caricons"></div>
+        						<a href="#"><div class="public_caricons"></div></a>
         					</div>
         				</li>
         			</ul>
@@ -550,11 +337,11 @@
         </div>
         <div class="con_pulic">
         	<div class="public_top">
-        		<a href="#"><img src="img/meiweituijian.jpg"/></a>
+        		<a href="#"><img src="img/102088309883300968.jpg"/></a>
         	</div>
         	<div class="public_bot">
         		<div class="public_left">
-        			<a href="#"><img src="img/cereal_cn_pc_kv.jpg"/></a>
+        			<a href="#"><img src="img/kv.jpg"/></a>
         		</div>
         		<div class="public_right">
         			<ul>
@@ -564,25 +351,25 @@
         						<a href="#"><p class="public_imgBox_title" >美国&澳洲 安格斯牛肉 家庭组合</p></a>
         						<p id="zhongliang">1.45kg</p>
         						<p id="price">￥318 <del>￥628</del></p>
-        						<div class="public_caricons"></div>
+        						<a href="#"><div class="public_caricons"></div></a>
         					</div>
         				</li>
         				<li>
         					<div class="public_imgBox">
         						<a href="#"><img src="img/1536596681346017.jpg"/></a><br/>
-        						<a href="#"><p class="public_imgBox_title" >美国&澳洲 安格斯牛肉合</p></a>
+        						<a href="#"><p class="public_imgBox_title" >优惠券使用</p></a>
         						<p id="zhongliang">1.45kg</p>
         						<p id="price">￥318 <del>￥628</del></p>
-        						<div class="public_caricons"></div>
+        						<a href="#"><div class="public_caricons"></div></a>
         					</div>
         				</li>
         				<li>
         					<div class="public_imgBox">
         						<a href="#"><img src="img/1536596681346017.jpg"/></a><br/>
-        						<a href="#"><p class="public_imgBox_title" >美国&澳洲 安格斯牛肉合</p></a>
+        						<a href="#"><p class="public_imgBox_title" >优惠券使用</p></a>
         						<p id="zhongliang">1.45kg</p>
         						<p id="price">￥318 <del>￥628</del></p>
-        						<div class="public_caricons"></div>
+        						<a href="#"><div class="public_caricons"></div></a>
         					</div>
         				</li>
         			</ul>
@@ -593,25 +380,25 @@
         						<a href="#"><p class="public_imgBox_title" >美国&澳洲 安格斯牛肉 家庭组合</p></a>
         						<p id="zhongliang">1.45kg</p>
         						<p id="price">￥318 <del>￥628</del></p>
-        						<div class="public_caricons"></div>
+        						<a href="#"><div class="public_caricons"></div></a>
         					</div>
         				</li>
         				<li>
         					<div class="public_imgBox">
         						<a href="#"><img src="img/1536596681346017.jpg"/></a><br/>
-        						<a href="#"><p class="public_imgBox_title" >美国&澳洲 安格斯牛肉合</p></a>
+        						<a href="#"><p class="public_imgBox_title" >优惠券使用</p></a>
         						<p id="zhongliang">1.45kg</p>
         						<p id="price">￥318 <del>￥628</del></p>
-        						<div class="public_caricons"></div>
+        						<a href="#"><div class="public_caricons"></div></a>
         					</div>
         				</li>
         				<li>
         					<div class="public_imgBox">
         						<a href="#"><img src="img/1536596681346017.jpg"/></a><br/>
-        						<a href="#"><p class="public_imgBox_title" >美国&澳洲 安格斯牛肉合</p></a>
+        						<a href="#"><p class="public_imgBox_title" >优惠券使用</p></a>
         						<p id="zhongliang">1.45kg</p>
         						<p id="price">￥318 <del>￥628</del></p>
-        						<div class="public_caricons"></div>
+        						<a href="#"><div class="public_caricons"></div></a>
         					</div>
         				</li>
         			</ul>
@@ -620,11 +407,11 @@
         </div>
         <div class="con_pulic">
         	<div class="public_top">
-        		<a href="#"><img src="img/meiweituijian.jpg"/></a>
+        		<a href="#"><img src="img/4548685283131315.jpg"/></a>
         	</div>
         	<div class="public_bot">
         		<div class="public_left">
-        			<a href="#"><img src="img/cereal_cn_pc_kv.jpg"/></a>
+        			<a href="#"><img src="img/cn_pc_kv(1).jpg"/></a>
         		</div>
         		<div class="public_right">
         			<ul>
@@ -634,25 +421,25 @@
         						<a href="#"><p class="public_imgBox_title" >美国&澳洲 安格斯牛肉 家庭组合</p></a>
         						<p id="zhongliang">1.45kg</p>
         						<p id="price">￥318 <del>￥628</del></p>
-        						<div class="public_caricons"></div>
+        						<a href="#"><div class="public_caricons"></div></a>
         					</div>
         				</li>
         				<li>
         					<div class="public_imgBox">
         						<a href="#"><img src="img/1536596681346017.jpg"/></a><br/>
-        						<a href="#"><p class="public_imgBox_title" >美国&澳洲 安格斯牛肉合</p></a>
+        						<a href="#"><p class="public_imgBox_title" >优惠券使用</p></a>
         						<p id="zhongliang">1.45kg</p>
         						<p id="price">￥318 <del>￥628</del></p>
-        						<div class="public_caricons"></div>
+        						<a href="#"><div class="public_caricons"></div></a>
         					</div>
         				</li>
         				<li>
         					<div class="public_imgBox">
         						<a href="#"><img src="img/1536596681346017.jpg"/></a><br/>
-        						<a href="#"><p class="public_imgBox_title" >美国&澳洲 安格斯牛肉合</p></a>
+        						<a href="#"><p class="public_imgBox_title" >优惠券使用</p></a>
         						<p id="zhongliang">1.45kg</p>
         						<p id="price">￥318 <del>￥628</del></p>
-        						<div class="public_caricons"></div>
+        						<a href="#"><div class="public_caricons"></div></a>
         					</div>
         				</li>
         			</ul>
@@ -663,25 +450,25 @@
         						<a href="#"><p class="public_imgBox_title" >美国&澳洲 安格斯牛肉 家庭组合</p></a>
         						<p id="zhongliang">1.45kg</p>
         						<p id="price">￥318 <del>￥628</del></p>
-        						<div class="public_caricons"></div>
+        						<a href="#"><div class="public_caricons"></div></a>
         					</div>
         				</li>
         				<li>
         					<div class="public_imgBox">
         						<a href="#"><img src="img/1536596681346017.jpg"/></a><br/>
-        						<a href="#"><p class="public_imgBox_title" >美国&澳洲 安格斯牛肉合</p></a>
+        						<a href="#"><p class="public_imgBox_title" >优惠券使用</p></a>
         						<p id="zhongliang">1.45kg</p>
         						<p id="price">￥318 <del>￥628</del></p>
-        						<div class="public_caricons"></div>
+        						<a href="#"><div class="public_caricons"></div></a>
         					</div>
         				</li>
         				<li>
         					<div class="public_imgBox">
         						<a href="#"><img src="img/1536596681346017.jpg"/></a><br/>
-        						<a href="#"><p class="public_imgBox_title" >美国&澳洲 安格斯牛肉合</p></a>
+        						<a href="#"><p class="public_imgBox_title" >优惠券使用</p></a>
         						<p id="zhongliang">1.45kg</p>
         						<p id="price">￥318 <del>￥628</del></p>
-        						<div class="public_caricons"></div>
+        						<a href="#"><div class="public_caricons"></div></a>
         					</div>
         				</li>
         			</ul>
@@ -690,11 +477,11 @@
         </div>
         <div class="con_pulic">
         	<div class="public_top">
-        		<a href="#"><img src="img/meiweituijian.jpg"/></a>
+        		<a href="#"><img src="img/hengfutiao.jpg"/></a>
         	</div>
         	<div class="public_bot">
         		<div class="public_left">
-        			<a href="#"><img src="img/cereal_cn_pc_kv.jpg"/></a>
+        			<a href="#"><img src="img/web_pc_kv_358_666.jpg"/></a>
         		</div>
         		<div class="public_right">
         			<ul>
@@ -704,25 +491,25 @@
         						<a href="#"><p class="public_imgBox_title" >美国&澳洲 安格斯牛肉 家庭组合</p></a>
         						<p id="zhongliang">1.45kg</p>
         						<p id="price">￥318 <del>￥628</del></p>
-        						<div class="public_caricons"></div>
+        						<a href="#"><div class="public_caricons"></div></a>
         					</div>
         				</li>
         				<li>
         					<div class="public_imgBox">
         						<a href="#"><img src="img/1536596681346017.jpg"/></a><br/>
-        						<a href="#"><p class="public_imgBox_title" >美国&澳洲 安格斯牛肉合</p></a>
+        						<a href="#"><p class="public_imgBox_title" >优惠券使用</p></a>
         						<p id="zhongliang">1.45kg</p>
         						<p id="price">￥318 <del>￥628</del></p>
-        						<div class="public_caricons"></div>
+        						<a href="#"><div class="public_caricons"></div></a>
         					</div>
         				</li>
         				<li>
         					<div class="public_imgBox">
         						<a href="#"><img src="img/1536596681346017.jpg"/></a><br/>
-        						<a href="#"><p class="public_imgBox_title" >美国&澳洲 安格斯牛肉合</p></a>
+        						<a href="#"><p class="public_imgBox_title" >优惠券使用</p></a>
         						<p id="zhongliang">1.45kg</p>
         						<p id="price">￥318 <del>￥628</del></p>
-        						<div class="public_caricons"></div>
+        						<a href="#"><div class="public_caricons"></div></a>
         					</div>
         				</li>
         			</ul>
@@ -733,25 +520,25 @@
         						<a href="#"><p class="public_imgBox_title" >美国&澳洲 安格斯牛肉 家庭组合</p></a>
         						<p id="zhongliang">1.45kg</p>
         						<p id="price">￥318 <del>￥628</del></p>
-        						<div class="public_caricons"></div>
+        						<a href="#"><div class="public_caricons"></div></a>
         					</div>
         				</li>
         				<li>
         					<div class="public_imgBox">
         						<a href="#"><img src="img/1536596681346017.jpg"/></a><br/>
-        						<a href="#"><p class="public_imgBox_title" >美国&澳洲 安格斯牛肉合</p></a>
+        						<a href="#"><p class="public_imgBox_title" >优惠券使用</p></a>
         						<p id="zhongliang">1.45kg</p>
         						<p id="price">￥318 <del>￥628</del></p>
-        						<div class="public_caricons"></div>
+        						<a href="#"><div class="public_caricons"></div></a>
         					</div>
         				</li>
         				<li>
         					<div class="public_imgBox">
         						<a href="#"><img src="img/1536596681346017.jpg"/></a><br/>
-        						<a href="#"><p class="public_imgBox_title" >美国&澳洲 安格斯牛肉合</p></a>
+        						<a href="#"><p class="public_imgBox_title" >优惠券使用</p></a>
         						<p id="zhongliang">1.45kg</p>
         						<p id="price">￥318 <del>￥628</del></p>
-        						<div class="public_caricons"></div>
+        						<a href="#"><div class="public_caricons"></div></a>
         					</div>
         				</li>
         			</ul>
@@ -760,11 +547,11 @@
         </div>
         <div class="con_pulic">
         	<div class="public_top">
-        		<a href="#"><img src="img/meiweituijian.jpg"/></a>
+        		<a href="#"><img src="img/PC-tiao.jpg"/></a>
         	</div>
         	<div class="public_bot">
         		<div class="public_left">
-        			<a href="#"><img src="img/cereal_cn_pc_kv.jpg"/></a>
+        			<a href="#"><img src="img/PC-kv.jpg"/></a>
         		</div>
         		<div class="public_right">
         			<ul>
@@ -774,95 +561,25 @@
         						<a href="#"><p class="public_imgBox_title" >美国&澳洲 安格斯牛肉 家庭组合</p></a>
         						<p id="zhongliang">1.45kg</p>
         						<p id="price">￥318 <del>￥628</del></p>
-        						<div class="public_caricons"></div>
+        						<a href="#"><div class="public_caricons"></div></a>
         					</div>
         				</li>
         				<li>
         					<div class="public_imgBox">
         						<a href="#"><img src="img/1536596681346017.jpg"/></a><br/>
-        						<a href="#"><p class="public_imgBox_title" >美国&澳洲 安格斯牛肉合</p></a>
+        						<a href="#"><p class="public_imgBox_title" >优惠券使用</p></a>
         						<p id="zhongliang">1.45kg</p>
         						<p id="price">￥318 <del>￥628</del></p>
-        						<div class="public_caricons"></div>
+        						<a href="#"><div class="public_caricons"></div></a>
         					</div>
         				</li>
         				<li>
         					<div class="public_imgBox">
         						<a href="#"><img src="img/1536596681346017.jpg"/></a><br/>
-        						<a href="#"><p class="public_imgBox_title" >美国&澳洲 安格斯牛肉合</p></a>
+        						<a href="#"><p class="public_imgBox_title" >优惠券使用</p></a>
         						<p id="zhongliang">1.45kg</p>
         						<p id="price">￥318 <del>￥628</del></p>
-        						<div class="public_caricons"></div>
-        					</div>
-        				</li>
-        			</ul>
-        			<ul class="uls_two">
-        				<li>
-        					<div class="public_imgBox">
-        						<a href="#"><img src="img/1536596681346017.jpg"/></a><br/>
-        						<a href="#"><p class="public_imgBox_title" >美国&澳洲 安格斯牛肉 家庭组合</p></a>
-        						<p id="zhongliang">1.45kg</p>
-        						<p id="price">￥318 <del>￥628</del></p>
-        						<div class="public_caricons"></div>
-        					</div>
-        				</li>
-        				<li>
-        					<div class="public_imgBox">
-        						<a href="#"><img src="img/1536596681346017.jpg"/></a><br/>
-        						<a href="#"><p class="public_imgBox_title" >美国&澳洲 安格斯牛肉合</p></a>
-        						<p id="zhongliang">1.45kg</p>
-        						<p id="price">￥318 <del>￥628</del></p>
-        						<div class="public_caricons"></div>
-        					</div>
-        				</li>
-        				<li>
-        					<div class="public_imgBox">
-        						<a href="#"><img src="img/1536596681346017.jpg"/></a><br/>
-        						<a href="#"><p class="public_imgBox_title" >美国&澳洲 安格斯牛肉合</p></a>
-        						<p id="zhongliang">1.45kg</p>
-        						<p id="price">￥318 <del>￥628</del></p>
-        						<div class="public_caricons"></div>
-        					</div>
-        				</li>
-        			</ul>
-        		</div>
-        	</div>
-        </div>
-        <div class="con_pulic">
-        	<div class="public_top">
-        		<a href="#"><img src="img/meiweituijian.jpg"/></a>
-        	</div>
-        	<div class="public_bot">
-        		<div class="public_left">
-        			<a href="#"><img src="img/cereal_cn_pc_kv.jpg"/></a>
-        		</div>
-        		<div class="public_right">
-        			<ul>
-        				<li>
-        					<div class="public_imgBox">
-        						<a href="#"><img src="img/1536596681346017.jpg"/></a><br/>
-        						<a href="#"><p class="public_imgBox_title" >美国&澳洲 安格斯牛肉 家庭组合</p></a>
-        						<p id="zhongliang">1.45kg</p>
-        						<p id="price">￥318 <del>￥628</del></p>
-        						<div class="public_caricons"></div>
-        					</div>
-        				</li>
-        				<li>
-        					<div class="public_imgBox">
-        						<a href="#"><img src="img/1536596681346017.jpg"/></a><br/>
-        						<a href="#"><p class="public_imgBox_title" >美国&澳洲 安格斯牛肉合</p></a>
-        						<p id="zhongliang">1.45kg</p>
-        						<p id="price">￥318 <del>￥628</del></p>
-        						<div class="public_caricons"></div>
-        					</div>
-        				</li>
-        				<li>
-        					<div class="public_imgBox">
-        						<a href="#"><img src="img/1536596681346017.jpg"/></a><br/>
-        						<a href="#"><p class="public_imgBox_title" >美国&澳洲 安格斯牛肉合</p></a>
-        						<p id="zhongliang">1.45kg</p>
-        						<p id="price">￥318 <del>￥628</del></p>
-        						<div class="public_caricons"></div>
+        						<a href="#"><div class="public_caricons"></div></a>
         					</div>
         				</li>
         			</ul>
@@ -873,95 +590,25 @@
         						<a href="#"><p class="public_imgBox_title" >美国&澳洲 安格斯牛肉 家庭组合</p></a>
         						<p id="zhongliang">1.45kg</p>
         						<p id="price">￥318 <del>￥628</del></p>
-        						<div class="public_caricons"></div>
+        						<a href="#"><div class="public_caricons"></div></a>
         					</div>
         				</li>
         				<li>
         					<div class="public_imgBox">
         						<a href="#"><img src="img/1536596681346017.jpg"/></a><br/>
-        						<a href="#"><p class="public_imgBox_title" >美国&澳洲 安格斯牛肉合</p></a>
+        						<a href="#"><p class="public_imgBox_title" >优惠券使用</p></a>
         						<p id="zhongliang">1.45kg</p>
         						<p id="price">￥318 <del>￥628</del></p>
-        						<div class="public_caricons"></div>
+        						<a href="#"><div class="public_caricons"></div></a>
         					</div>
         				</li>
         				<li>
         					<div class="public_imgBox">
         						<a href="#"><img src="img/1536596681346017.jpg"/></a><br/>
-        						<a href="#"><p class="public_imgBox_title" >美国&澳洲 安格斯牛肉合</p></a>
+        						<a href="#"><p class="public_imgBox_title" >优惠券使用</p></a>
         						<p id="zhongliang">1.45kg</p>
         						<p id="price">￥318 <del>￥628</del></p>
-        						<div class="public_caricons"></div>
-        					</div>
-        				</li>
-        			</ul>
-        		</div>
-        	</div>
-        </div>
-        <div class="con_pulic">
-        	<div class="public_top">
-        		<a href="#"><img src="img/meiweituijian.jpg"/></a>
-        	</div>
-        	<div class="public_bot">
-        		<div class="public_left">
-        			<a href="#"><img src="img/cereal_cn_pc_kv.jpg"/></a>
-        		</div>
-        		<div class="public_right">
-        			<ul>
-        				<li>
-        					<div class="public_imgBox">
-        						<a href="#"><img src="img/1536596681346017.jpg"/></a><br/>
-        						<a href="#"><p class="public_imgBox_title" >美国&澳洲 安格斯牛肉 家庭组合</p></a>
-        						<p id="zhongliang">1.45kg</p>
-        						<p id="price">￥318 <del>￥628</del></p>
-        						<div class="public_caricons"></div>
-        					</div>
-        				</li>
-        				<li>
-        					<div class="public_imgBox">
-        						<a href="#"><img src="img/1536596681346017.jpg"/></a><br/>
-        						<a href="#"><p class="public_imgBox_title" >美国&澳洲 安格斯牛肉合</p></a>
-        						<p id="zhongliang">1.45kg</p>
-        						<p id="price">￥318 <del>￥628</del></p>
-        						<div class="public_caricons"></div>
-        					</div>
-        				</li>
-        				<li>
-        					<div class="public_imgBox">
-        						<a href="#"><img src="img/1536596681346017.jpg"/></a><br/>
-        						<a href="#"><p class="public_imgBox_title" >美国&澳洲 安格斯牛肉合</p></a>
-        						<p id="zhongliang">1.45kg</p>
-        						<p id="price">￥318 <del>￥628</del></p>
-        						<div class="public_caricons"></div>
-        					</div>
-        				</li>
-        			</ul>
-        			<ul class="uls_two">
-        				<li>
-        					<div class="public_imgBox">
-        						<a href="#"><img src="img/1536596681346017.jpg"/></a><br/>
-        						<a href="#"><p class="public_imgBox_title" >美国&澳洲 安格斯牛肉 家庭组合</p></a>
-        						<p id="zhongliang">1.45kg</p>
-        						<p id="price">￥318 <del>￥628</del></p>
-        						<div class="public_caricons"></div>
-        					</div>
-        				</li>
-        				<li>
-        					<div class="public_imgBox">
-        						<a href="#"><img src="img/1536596681346017.jpg"/></a><br/>
-        						<a href="#"><p class="public_imgBox_title" >美国&澳洲 安格斯牛肉合</p></a>
-        						<p id="zhongliang">1.45kg</p>
-        						<p id="price">￥318 <del>￥628</del></p>
-        						<div class="public_caricons"></div>
-        					</div>
-        				</li>
-        				<li>
-        					<div class="public_imgBox">
-        						<a href="#"><img src="img/1536596681346017.jpg"/></a><br/>
-        						<a href="#"><p class="public_imgBox_title" >美国&澳洲 安格斯牛肉合</p></a>
-        						<p id="zhongliang">1.45kg</p>
-        						<p id="price">￥318 <del>￥628</del></p>
-        						<div class="public_caricons"></div>
+        						<a href="#"><div class="public_caricons"></div></a>
         					</div>
         				</li>
         			</ul>
@@ -969,59 +616,47 @@
         	</div>
         </div>
     </div>
-    <footer>
-    	<div class="foot">
-    		<img src="img/ft-2.png" alt="" />
-			<div class="foot_left">
-				<img src="img/logo20180627.png"/>
-				<p><span>Hotline</span>400-820-7708</p>
-				<p>08:00~20:00</p>
-			</div>
-			<div class="foot_cent">
-				<div class="foot_one">
-					<h2>新手入门</h2>
-					<a href="#">关于我们</a>
-					<a href="#">常见问题</a>
-					<a href="#">联系我们</a>
-					<a href="#">加入我们</a>
-				</div>
-				<div class="foot_one">
-					<h2>企业服务</h2>
-					<a href="#">礼品卡</a>
-					<a href="#">会员制度</a>
-					<a href="#">积分制度</a>
-				</div>
-				<div class="foot_one">
-					<h2>售后服务</h2>
-					<a href="#">服务制度</a>
-					<a href="#">配送条款</a>
-					<a href="#">配送范围及时间</a>
-					<a href="#">电子支票</a>
-				</div>
-				<div class="foot_one">
-					<h2>支付方式</h2>
-					<a href="#">在线支付</a>
-					<a href="#">货到付款</a>
-					<a href="#">优惠券使用</a>
-				</div>
-			</div>
-			<div class="foot_right">
-				<div class="foot_weixin">
-					<img src="img/weixin-zh.png" alt="" />
-					<p>关注微信</p>
-				</div>
-				<div class="foot_app">
-					<img src="img/down-app.png"/>
-					<p>下载app</p>
-				</div>
-			</div>
-    	</div>
-    </footer>
-    <div class="foot_bottom">
-    	<div class="foot_text">
-    		<a href="#"><img src="img/guan_shgs.gif" alt="" /></a>
-    		<span>&copy; 2009-2018 FIELDS CHINA. All Rights Reserved 沪ICP备10215492号-3</span>
-    	</div>
+    <div class="footerBox">
+    	<!--footer、foot_bottom、scroll_fixed_right 部分-->
     </div>
 </body>
 </html>
+<script type="text/javascript">
+	window.onload = function(){
+		let s1 = new Slider($("#con_banner"),1200,430,["img/banner1.jpg","img/pc_slider.jpg","img/web_pc_slider_1200_430_220.jpg","img/banner1.jpg","img/pc_slider.jpg","img/web_pc_slider_1200_430_220.jpg"],
+				10,"#ccc","green",
+				true,-1,1500);
+	}
+	
+	$(function(){
+		$(".show_one_img").masking();
+		
+		$(".show_one_img div:last-of-type").addClass("zheBox").css({
+			background:"rgab(0,0,0,.5)",
+			paddingTop:"80px",
+			height:"188px",
+			cursor:"pointer",
+			textAlign:"center",
+			lineHeight:"50px"
+		});
+		$(".show_box:nth-child(1) .zheBox").append("<h1>注册免费送</h1><h3>Fields精选 葱油拌面     <span>2份</span></h3>").css({
+			color:"white",
+		});
+		$(".show_box:nth-child(2) .zheBox").append("<h1>超值团购回馈</h1><h1>错过后会无期</h1>").css({
+			color:"white",
+		});
+		$(".show_box:nth-child(3) .zheBox").append("<h1>阳澄湖大闸蟹</h1><h3>全国配送</h3><h3>死蟹赔偿</h3>").css({
+			color:"white",
+		});
+	});
+	
+	//载入远程 publicTop.html 文件代码并插入至 .headerBox 中
+	$(".headerBox").load("publicTop.html");
+
+	//载入远程 publicBottom.html 文件代码并插入至 .footerBox 中
+	$(".footerBox").load("publicBottom.html");
+	
+	//载入远程 publicContant.html 文件代码并插入至 .contantBox 中
+	$(".contantBox").load("publicContant.html");
+	
+</script>
