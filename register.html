@@ -2,9 +2,62 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>注册</title>
+	<title>用户登录</title>
+    <link rel="stylesheet" type="text/css" href="css/public.css" />
+    <link rel="stylesheet" type="text/css" href="css/login.css"/>
+    <link rel="stylesheet" type="text/css" href="css/register.css"/>
 </head>
+<script src="js/jquery-1.8.3.js" type="text/javascript" charset="utf-8"></script>
 <body>
-	
+	<div class="login_top">
+		<div class="headerBox">
+			<!--header  部分-->
+		</div>
+		<div class="login_header_two">
+			<div class="login_header_left">
+				<img src="img/logo20180627.png"/>
+			</div>
+		</div>
+	</div>
+	<div class="login_bottom">
+		<div class="login_btop_public">
+			<h1>FIELDS 登录</h1>
+			<span><a href="login.html">没有账号？注册</a></span>
+		</div>
+		<div class="login_bottom_public" >
+			<div class="login_bottom_left">
+				<img src="img/cn.jpg"/>
+			</div>
+			<div class="login_bottom_right">
+				<form class="login_list">
+					<ul>
+						<li>
+							<input type="text" name="" id="" placeholder="E-mail/手机号" class="m-input m-input-big"/>
+						</li>
+						<li>
+							<input type="text" name="" id="" placeholder="密码" class="m-input m-input-big"/>
+						</li>
+						<li class="login_uls_li6">
+							<input type="checkbox" name="" id="checkbox_public" class="public_servrse" />
+							<p>我已经阅读并同意《
+							<a href="#">甫田网服务条款</a>
+							》</p>
+						</li>
+						<li>
+							<button class="oncereg">登录</button>
+						</li>
+					</ul>
+				</form>
+			</div>
+			<div class="login_public_bottom">
+				<span>&copy; 2009-2018 FIELDS CHINA. All Rights Reserved 沪ICP备10215492号-3</span>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
+<script type="text/javascript">
+	$(".headerBox").load("publicTop.html");
+	
+	
+</script>

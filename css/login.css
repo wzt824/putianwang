@@ -23,7 +23,8 @@ a {
 
 .login_bottom {
   width: 1200px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-bottom: 100px; }
 
 .login_btop_public {
   margin: 24px 0;
@@ -53,19 +54,22 @@ a {
 .login_bottom_right {
   float: right; }
 
-.m-input {
-  display: inline-block;
+.login_list ul {
+  width: 402px; }
+
+.login_list li {
+  width: 402px;
+  height: 66px !important;
+  margin-bottom: 30px;
+  position: relative; }
+
+.login_list .m-input {
   text-indent: 8px;
-  border: 1px solid #e3e3e3 !important;
   outline: 1px solid #009C4B !important;
   box-sizing: border-box;
   width: 402px;
   height: 66px !important;
-  background: white !important;
-  margin-bottom: 30px; }
-
-.login_list ul li:nth-child(2) {
-  position: relative; }
+  background: white; }
 
 .image-btn {
   position: absolute;
@@ -74,6 +78,52 @@ a {
   display: block;
   width: 140px;
   height: 58px;
+  text-align: center;
+  line-height: 58px;
+  color: #737373;
   cursor: pointer; }
+
+.clickSendSMS {
+  background: #e2e6e4; }
+
+.login_list .login_uls_li6 {
+  height: 20px !important;
+  font-size: 12px !important;
+  line-height: 12px; }
+
+.login_list .login_uls_li6 .public_servrse {
+  margin-right: 8px;
+  width: 17px;
+  height: 17px;
+  vertical-align: middle; }
+
+.login_uls_li6 p {
+  display: inline;
+  line-height: 20px; }
+
+.login_list ul li:last-child {
+  margin-bottom: 0; }
+
+.oncereg {
+  color: white;
+  font-size: 24px;
+  border: 0;
+  outline: none;
+  width: 402px;
+  height: 66px;
+  cursor: pointer;
+  background: #009C4B; }
+
+.login_public_bottom {
+  width: 1200px;
+  margin-left: -52px !important;
+  margin-top: 700px;
+  text-align: center;
+  font-size: 12px;
+  color: #626262;
+  border-top: 1px solid #f0f0f0; }
+
+.login_public_bottom span {
+  line-height: 50px; }
 
 /*# sourceMappingURL=login.css.map */

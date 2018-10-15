@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAEQ,qDAAkB;EACd,UAAU,EAAE,YAAW;AAG3B,sDAAmB;EACf,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,OAAO,EAAE,aAAa;EACtB,MAAM,EAAC,iBAAiB;AAG5B,uDAAoB;EAChB,UAAU,EAAE,KAAK",
+"sources": ["../workSass/register.scss"],
 "names": [],
 "file": "register.css"
 }
