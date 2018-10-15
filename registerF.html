@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+</head>
+<body>
+    亲，注册失败，<span id="skipSpan">5</span>秒后<a href="login.html"> 再来一次 </a>！
+</body>
+</html>
+<script>
+    function $(id) {
+        return document.getElementById(id);
+    }
+
+    window.onload = function () {
+        let secounds = 5;
+        let myTimes = setInterval(function() {
+            secounds --;
+            if(secounds<=0){login
+                window.clearInterval(myTimes);
+                location.href = ".html";
+            }
+            $('skipSpan').innerHTML = secounds;
+        },1000);
+    }
+
+</script>

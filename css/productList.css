@@ -1,0 +1,235 @@
+.contant {
+  height: 100%; }
+  .contant .con_nav {
+    border-top: 1px solid #F0F0F0;
+    border-bottom: 1px solid #F0F0F0; }
+    .contant .con_nav .con_uls li:nth-child(1) .uls {
+      display: none; }
+  .contant .con_details {
+    width: 1106px;
+    padding: 10px 28px 10px 66px; }
+    .contant .con_details .details_up {
+      font-size: 14px;
+      color: #737373; }
+      .contant .con_details .details_up a {
+        color: #737373; }
+    .contant .con_details .details_down {
+      color: #8d8d8d;
+      font-size: 12px; }
+      .contant .con_details .details_down .details_down_l {
+        width: 450px;
+        float: left; }
+        .contant .con_details .details_down .details_down_l #bigBox {
+          position: relative;
+          width: 450px;
+          height: 450px;
+          background-image: url(../img/1536596681346017_s3.jpg);
+          background-size: 450px 450px; }
+          .contant .con_details .details_down .details_down_l #bigBox .left_zhe {
+            position: absolute;
+            top: 10px;
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            background: #db2222;
+            font-size: 20px;
+            color: #ffffff;
+            text-align: center;
+            line-height: 65px; }
+          .contant .con_details .details_down .details_down_l #bigBox .right_pos {
+            width: 100px;
+            position: absolute;
+            left: 350px;
+            top: 20px; }
+            .contant .con_details .details_down .details_down_l #bigBox .right_pos p {
+              display: inline;
+              float: left;
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              color: #fff;
+              font-size: 14px;
+              text-align: center;
+              line-height: 40px;
+              background: #70caf3;
+              margin-right: 6px; }
+            .contant .con_details .details_down .details_down_l #bigBox .right_pos p:nth-child(2) {
+              background: #5b5ce5; }
+        .contant .con_details .details_down .details_down_l ul li {
+          width: 70px;
+          height: 70px;
+          border: 1px solid #f0f0f0;
+          margin-right: 10px;
+          float: left; }
+        .contant .con_details .details_down .details_down_l ul li:nth-child(1) {
+          background-image: url(../img/1536596681346017_s3.jpg);
+          background-size: 70px 70px; }
+        .contant .con_details .details_down .details_down_l ul img {
+          width: 70px;
+          height: 70px; }
+      .contant .con_details .details_down .details_down_r {
+        width: 600px;
+        float: right;
+        padding-top: 28px;
+        color: #8d8d8d; }
+        .contant .con_details .details_down .details_down_r h1 {
+          font-size: 25px;
+          min-height: 50px;
+          color: #333; }
+        .contant .con_details .details_down .details_down_r h3 {
+          font-size: 16px;
+          color: #009c4c; }
+        .contant .con_details .details_down .details_down_r h6 {
+          line-height: 2;
+          color: #8d8d8d;
+          font-size: 12px; }
+        .contant .con_details .details_down .details_down_r .details_prices {
+          margin-bottom: 10px; }
+          .contant .con_details .details_down .details_down_r .details_prices strong {
+            font-size: 34px;
+            margin: 0 15px 0 25px;
+            color: #009c4c;
+            line-height: 68px;
+            font-weight: bold; }
+          .contant .con_details .details_down .details_down_r .details_prices i {
+            display: inline-block;
+            margin-left: 132px;
+            vertical-align: middle;
+            margin-top: -15px;
+            width: 35px;
+            height: 30px;
+            cursor: pointer;
+            background: url(../img/icons.png);
+            background-position: 381px 189px; }
+        .contant .con_details .details_down .details_down_r .details_SPEC {
+          border-top: 1px solid #f0f0f0;
+          border-bottom: 1px solid #f0f0f0;
+          padding: 20px 0; }
+          .contant .con_details .details_down .details_down_r .details_SPEC p {
+            display: inline-block;
+            min-width: 128px; }
+            .contant .con_details .details_down .details_down_r .details_SPEC p span {
+              display: inline-block;
+              padding: 8px 14px;
+              color: #333333;
+              border: 1px dotted #009c4c;
+              margin-bottom: 8px;
+              margin-left: 13px;
+              cursor: pointer;
+              background: #fff; }
+        .contant .con_details .details_down .details_down_r .deli_info {
+          color: #f07641;
+          padding: 20px 0 10px; }
+        .contant .con_details .details_down .details_down_r .details_info .span_info {
+          display: inline-block;
+          font-size: 0;
+          margin-right: 55px; }
+          .contant .con_details .details_down .details_down_r .details_info .span_info .reduce, .contant .con_details .details_down .details_down_r .details_info .span_info .add {
+            display: inline-block;
+            font-size: 16px;
+            line-height: 40px;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            text-align: center;
+            border: 1px solid #f0f0f0;
+            background-color: #fff; }
+          .contant .con_details .details_down .details_down_r .details_info .span_info .numChange {
+            display: inline-block;
+            font-size: 16px;
+            line-height: 40px;
+            width: 70px;
+            height: 40px;
+            padding: 0;
+            text-align: center;
+            border-top: 1px solid #f0f0f0;
+            border-bottom: 1px solid #f0f0f0; }
+        .contant .con_details .details_down .details_down_r .details_info .joinCar {
+          color: #fff;
+          vertical-align: middle;
+          margin-top: -7px;
+          border: none;
+          padding: 12px 20px;
+          background-color: #009c4c; }
+        .contant .con_details .details_down .details_down_r .details_text {
+          overflow-y: scroll;
+          height: 130px;
+          margin-top: 20px;
+          padding: 15px 0;
+          border-top: 1px solid #f0f0f0;
+          border-bottom: 1px solid #f0f0f0;
+          line-height: 23px; }
+  .contant .con_fixed {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    left: 0;
+    top: 0; }
+    .contant .con_fixed .con_fixedBox {
+      height: 75px;
+      width: 1140px;
+      margin: 0 auto;
+      border-bottom: 1px solid #f0f0f0;
+      background: white;
+      padding-top: 5px;
+      padding-left: 60px;
+      display: none; }
+      .contant .con_fixed .con_fixedBox .fixed_left {
+        float: left; }
+        .contant .con_fixed .con_fixedBox .fixed_left img {
+          float: left;
+          margin-right: 14px; }
+        .contant .con_fixed .con_fixedBox .fixed_left .fiexd_span {
+          margin-top: 3px;
+          font-size: 16px;
+          display: inline-block; }
+          .contant .con_fixed .con_fixedBox .fixed_left .fiexd_span span {
+            line-height: 24px;
+            display: block; }
+          .contant .con_fixed .con_fixedBox .fixed_left .fiexd_span span:last-child {
+            font-size: 14px;
+            color: #009c4c; }
+      .contant .con_fixed .con_fixedBox .fixed_right {
+        float: right; }
+        .contant .con_fixed .con_fixedBox .fixed_right .joinCar {
+          color: #fff;
+          vertical-align: middle;
+          margin-top: 12px;
+          border: none;
+          padding: 12px 20px;
+          background-color: #009c4c; }
+        .contant .con_fixed .con_fixedBox .fixed_right .carAdd {
+          width: 121px;
+          height: 42x;
+          margin: 12px 55px 0 30px;
+          background: white;
+          float: right;
+          color: #009c4c;
+          border: 1px solid #009c4c;
+          position: relative; }
+          .contant .con_fixed .con_fixedBox .fixed_right .carAdd .car_i {
+            float: left;
+            margin: 0 3px 0 13px;
+            width: 27px;
+            height: 39px;
+            background: url(../img/icons.png);
+            background-position: -475px 143px; }
+          .contant .con_fixed .con_fixedBox .fixed_right .carAdd p {
+            line-height: 39px; }
+          .contant .con_fixed .con_fixedBox .fixed_right .carAdd b {
+            color: white;
+            display: inline-block;
+            line-height: 20px;
+            position: absolute;
+            top: 1px;
+            right: 4px;
+            min-width: 20px;
+            height: 20px;
+            text-align: center;
+            background: #f07641;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            border-radius: 50%; }
+
+/*# sourceMappingURL=productList.css.map */

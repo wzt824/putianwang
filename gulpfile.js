@@ -14,7 +14,7 @@ gulp.task("copy-html",function(){
 	//gulp.src("index.html").pipe(gulp.dest("dist"));
 	//gulp.src("index.html")
 	gulp.src("*.html")
-	.pipe(gulp.dest("C:\\phpStudy\\PHPTutorial\\WWW\\putianwang"));
+	.pipe(gulp.dest("D:\\phpStudy\\PHPTutorial\\WWW\\putianwang"));
 });
 
 
@@ -22,22 +22,22 @@ gulp.task("copy-html",function(){
 //复制图片文件
 gulp.task("copy-img",function(){
 	gulp.src("img/**/*")
-	.pipe(gulp.dest("C:\\phpStudy\\PHPTutorial\\WWW\\putianwang\\img"));
+	.pipe(gulp.dest("D:\\phpStudy\\PHPTutorial\\WWW\\putianwang\\img"));
 });
 
 gulp.task("copy-js",function(){
 	gulp.src("js/**/*")
-	.pipe(gulp.dest("C:\\phpStudy\\PHPTutorial\\WWW\\putianwang\\js"));
+	.pipe(gulp.dest("D:\\phpStudy\\PHPTutorial\\WWW\\putianwang\\js"));
 });
 
 gulp.task("copy-css",function(){
 	gulp.src("css/**/*")
-	.pipe(gulp.dest("C:\\phpStudy\\PHPTutorial\\WWW\\putianwang\\css"));
+	.pipe(gulp.dest("D:\\phpStudy\\PHPTutorial\\WWW\\putianwang\\css"));
 });
 
 gulp.task("copy-font",function(){
 	gulp.src("font/**/*")
-	.pipe(gulp.dest("C:\\phpStudy\\PHPTutorial\\WWW\\putianwang\\font"));
+	.pipe(gulp.dest("D:\\phpStudy\\PHPTutorial\\WWW\\putianwang\\font"));
 });
 
 
@@ -73,7 +73,7 @@ gulp.task("copy-font",function(){
 gulp.task("sass",function(){
 	gulp.src("workSass/*.scss")
 	.pipe(sass())
-	.pipe(gulp.dest("C:\\phpStudy\\PHPTutorial\\WWW\\putianwang\\css"));
+	.pipe(gulp.dest("D:\\phpStudy\\PHPTutorial\\WWW\\putianwang\\css"));
 });
 
 

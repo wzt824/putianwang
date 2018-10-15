@@ -109,18 +109,24 @@ a{
     display: inline;
     line-height: 20px;
 }
-.login_list ul li:last-child{
+.login_list ul li:nth-last-child(2){
     margin-bottom: 0;
 }
-.oncereg{
-    color: white;
-    font-size: 24px;
+.login_list ul .oncereg{
     border: 0;
     outline: none;
     width: 402px;
     height: 66px;
     cursor:pointer;
-    background: #009C4B;
+    text-align: center;
+    line-height: 40px;
+    background: #009C4B!important;
+}
+#submit{
+    color: white;
+  font-size: 24px;
+  display: inline-block;
+  height: 66px!important;
 }
 .login_public_bottom{
     width: 1200px;
