@@ -1,0 +1,215 @@
+.contantBox .con_uls{
+    height: 43px;
+    border-top: 1px solid #F0F0F0;
+    border-bottom: 1px solid #F0F0F0;
+}
+.contantBox .con_uls li:nth-child(1) .uls{
+    display: none;
+}
+.contantBox .con_uls li:nth-child(1):hover .uls{
+    display: block;
+}
+.con_scroll{
+    border-bottom: 1px solid #F0F0F0;
+}
+.contant_breadcrumb{
+    padding: 15px 0 20px 65px;
+    background: #fff;
+    font-size: 14px;
+    color: #737373;
+    a{
+        color: #737373;
+    }
+}
+.contantDownBox{
+    width: 1200px;
+    margin: 0 auto;
+    font-size: 14px;
+    color: #737373;
+    .contantDownBox_l{
+        float: left;
+        width: 180px;
+        height: 3050px;
+        padding: 0 20px;
+        border-right:1px solid #E3E3E3 ;
+        ul{
+            text-align: center;
+            p{
+                font-size: 16px;
+                color: #009c4c;
+                text-align: center;
+                padding:5px 0;
+            }
+            li{
+                line-height: 32px;
+                position: relative;
+                a{
+                    color: #737373;
+                }
+                i{
+                    display: inline-block;
+                    width: 12px;
+                    height: 12px;
+                    position: absolute;
+                    right: 0;
+                    bottom: 10px;
+                    background: url(../img/icons.png);
+                    background-position: 156px 188px;
+                }
+            }
+//          li:first-child i{
+//              background: url(../img/icons.png);
+//              background-position: 132px 188px;
+//          }
+        }
+        .contantDownBox_l_b{
+            margin-top: 100px;
+            .pro_list{
+            text-align: center;
+                li{
+                    width: 129px;
+                    height: 280px;
+                    margin-bottom: 80px;
+                    .public_imgBox{
+                        line-height: 0;
+                        #zhongliang{
+                            margin-top: 0;
+                        }
+                        #price{
+                            line-height: 24px;
+                        }
+                    }
+                }
+                .listBox:hover p{
+                    text-align: left;
+                }
+            }
+        }
+    }
+    .contantDownBox_r{
+        padding:0 60px 10px 221px;
+        ul{
+            li{
+                padding: 12px 0;
+                position: relative;
+                strong{
+                    margin-left: 20px;
+                }
+                a{
+                    isplay: inline-block;
+                    margin: 0 15px 15px 15px;
+                    color: #737373
+                }
+                .list_ye{
+                    display: inline-block;
+                    position: absolute;
+                    top: 5px;
+                    right: 0;
+                    padding: 6px 13px;
+                    min-width: 100px;
+                    background: #e2e6e4;
+                    cursor: pointer;
+                    i{
+                        display: inline-block;
+                        width: 12px;
+                        height: 6px;
+                        position: absolute;
+                        right: 25px;
+                        bottom: 13px;
+                        background: url(../img/icons.png);
+                        background-position: 247px 341px
+                    }
+                    ul{
+                        position: absolute;
+                        top: 30px;
+                        right: 0;
+                        z-index: 432;
+                        display: none;
+                        li{
+                            min-width: 118px;
+                            border-top: 1px solid white;
+                            background: #e2e6e4;
+                            padding: 0px;
+                            a{
+                                display: inline-block;
+                                margin: 0;
+                                height: 24px;
+                                text-decoration: none;
+                                text-indent: 12px;
+                                line-height: 24px;
+                                min-width: 126px;
+                            }
+                        }
+                    }
+                }
+                .list_ye:hover ul{
+                    display: block;
+                    
+                }li:hover a{
+                        background: white;
+                    }
+                
+            }
+        }
+    }
+}
+.pro_list{
+    li{
+        width: 229px;
+        height: 300px;
+        float: left;
+        margin-bottom: 10px;
+        position: relative;
+        .listBox{
+            text-align: center;
+            background: white;
+            img{
+                width: 175px;
+                height: 175px;
+            }
+            a{
+                margin: 0;
+                font-size: 14px;
+            }
+            p{
+                font-size: 12px;
+                color: #009B4C;
+                margin-top: 12px;
+            }
+            .public_imgBox{
+                border-right: none;
+                position: relative;
+                height: 100%;
+                width: 100%;
+                padding: 0;
+                span{
+                    font-size: 12px;
+                }
+                .public_caricons{
+                    position: absolute;
+                    right: 0;
+                    bottom:275px;
+                    z-index:101;
+                    display: none;
+                }
+                #price{
+                    margin-top: 0;
+                }
+            }
+        }
+        .listBox:hover{
+            width: 189px;
+            padding: 0 30px;
+            height: 340px;
+            box-shadow: 0 0 10px gray;
+            position: absolute;
+            text-align: left;
+            z-index:10;
+            left:-7px;
+            top:5px;
+        }
+        .listBox:hover .public_caricons{
+            display: block;
+        }
+    }
+}

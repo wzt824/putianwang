@@ -1,3 +1,13 @@
+body,p,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,td,input,select,option,textarea{
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
 .contant{
     height: 100%;
     .con_nav{
@@ -10,6 +20,7 @@
     }
     .con_details{
         width: 1106px;
+        overflow: hidden;
         padding: 10px 28px 10px 66px;
         .details_up{
             font-size: 14px;
@@ -77,14 +88,14 @@
                         background-image: url(../img/1536596681346017_s3.jpg);
                         background-size: 70px 70px;
                     }
-//                  li:nth-child(2){
-//                      background-image: url(../img/beef.png);
-//                      background-size: 70px 70px;
-//                  }
-//                  li:nth-child(3){
-//                      background-image: url(../img/CN-shellfish.png);
-//                      background-size: 70px 70px;
-//                  }
+                    li:nth-child(2){
+                        background-image: url(../img/beef.png);
+                        background-size: 70px 70px;
+                    }
+                    li:nth-child(3){
+                        background-image: url(../img/CN-shellfish.png);
+                        background-size: 70px 70px;
+                    }
                     img{
                         width: 70px;
                         height: 70px;
@@ -202,6 +213,65 @@
                 }
             }
             
+        }
+    }
+    .con_intr{
+        font-size: 16px;
+        color: #009c4c;
+        margin-top: 50px;
+        padding: 10px 28px 10px 66px;
+        p{
+            line-height: 38px;
+            border-bottom: 1px solid #DDDDDD;
+            span{
+                display: inline-block;
+                line-height: 38px;
+                border-bottom: 2px solid #009C4c;
+            }
+            a{
+                color: #737373;
+                float: right;
+            }
+        }
+        p:nth-child(2){
+            border-bottom: none;
+        }
+        .cookbookBox{
+            .cookbookLeft{
+                float: left;
+                img{
+                    width: 276px;
+                    height:201px;
+                }
+            }
+            .cookbookCen{
+                float: left;
+                width: 625px;
+                overflow-x: scroll;
+                .cookbook-list{
+                    width: 1250px;
+                    li{
+                        float: left;
+                        width: 150px;
+                        height:185px;
+                        .cookbook-product{
+                            padding: 0 0 0 40px;
+                            width: 110px;
+                            height:183px;
+                            a{
+                                font-size: 12px;
+                                color: #737373;
+                                margin-top: 0;
+                                line-height: 12px;
+                            }
+                            img{
+                                width: 110px;
+                                height: 110px;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
     .con_fixed{

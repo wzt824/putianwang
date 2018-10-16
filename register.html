@@ -2,10 +2,9 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>用户登录</title>
-    <link rel="stylesheet" type="text/css" href="css/public.css" />
-    <link rel="stylesheet" type="text/css" href="css/login.css"/>
+	<title>用户注册</title>
     <link rel="stylesheet" type="text/css" href="css/register.css"/>
+    <link rel="stylesheet" type="text/css" href="css/public.css" />
 </head>
 <script src="js/jquery-1.8.3.js" type="text/javascript" charset="utf-8"></script>
 <body>
@@ -21,30 +20,43 @@
 	</div>
 	<div class="login_bottom">
 		<div class="login_btop_public">
-			<h1>FIELDS 登录</h1>
-			<span><a href="login.html">没有账号？注册</a></span>
+			<h1>FIELDS新会员注册</h1>
+			<span><a href="login.html">已有账号？直接登录</a></span>
 		</div>
 		<div class="login_bottom_public" >
 			<div class="login_bottom_left">
-				<img src="img/cn.jpg"/>
+				<img src="img/cn_pc_zhuceye.png"/>
 			</div>
 			<div class="login_bottom_right">
-				<form class="login_list">
+				<form class="login_list" action="registerCheck.php" method="post">
 					<ul>
 						<li>
-							<input type="text" name="" id="" placeholder="E-mail/手机号" class="m-input m-input-big"/>
+							<input type="text" name="userphone" id="userphone" placeholder="请填写正确的手机号码" class="m-input m-input-big"/>
 						</li>
 						<li>
-							<input type="text" name="" id="" placeholder="密码" class="m-input m-input-big"/>
+							<input type="text" placeholder="请输入图形验证码" class="m-input m-input-big"/>
+							<span class="image-btn">
+								<img style="height:58px;width: 140px;" id="l_yzm" onclick="myReload()" src="https://www.fieldschina.com/index.php?route=account/verify_code/register&1539418298513&1539418299212&1539418300003&1539418301733&1539418302619&1539418303224&1539418303785&1539418304162&1539418304386&1539418304644&1539418306141&1539418307528&1539418309725&1539418310012&1539418310258&1539418336676&1539418336900&1539418337172&1539418337974&1539418338269&1539418338518&1539418339944&1539418340842&1539418349572&1539418350257&1539418350870&1539418351703&1539418353210&1539418353770&1539418354292&1539418354964&1539418355636&1539418371729&1539418372170&1539418372882&1539418373450&1539418425896&1539418426376&1539418431150&1539418431968&1539418432505&1539418433017&1539418433406&1539418433834&1539418434370&1539418434869&1539418435348&1539418435856&1539418436350&1539418436799&1539418437270&1539418437672&1539418446478&1539418446748&1539418446957&1539418447102&1539418447374&1539418447696&1539418448912&1539418449072&1539418449425&1539418449619&1539418459775&1539418460461&1539418461111&1539418461567&1539418461827&1539418462081&1539418462290&1539418462514&1539418462738&1539418463437&1539418463659&1539418463883&1539418464476&1539418465970&1539418466206&1539418466462&1539418467576&1539418468810&1539418470873&1539418471792&1539418473131&1539418475517&1539418476446"/>				
+							</span>
+						</li>
+						<li>
+							<input type="text" placeholder="请输入短信验证码" class="m-input m-input-big"/>
+							<span class="image-btn clickSendSMS">点击发送短信</span>
+						</li>
+						<li>
+							<input type="password" name="userpassword" id="userpassword" placeholder="请输入密码" class="m-input m-input-big"/>
+						</li>
+						<li>
+							<input type="password" placeholder="确认密码" class="m-input m-input-big"/>
 						</li>
 						<li class="login_uls_li6">
-							<input type="checkbox" name="" id="checkbox_public" class="public_servrse" />
+							<input type="checkbox" id="checkbox_public" class="public_servrse" />
 							<p>我已经阅读并同意《
 							<a href="#">甫田网服务条款</a>
 							》</p>
 						</li>
 						<li class="oncereg">
-							<input type="submit" id="submit" value="登录"></input>
+							<input type="submit" id="submit" value=" 立即注册"></input>
 						</li>
 					</ul>
 				</form>
@@ -59,5 +71,66 @@
 <script type="text/javascript">
 	$(".headerBox").load("publicTop.html");
 	
-	
+	//刷新图形验证码
+    function myReload(){
+        document.getElementById("l_yzm").src=document.getElementById("l_yzm").src+"&"+new Date().getTime();
+    };
+    
+    $(function(){
+    	function testF(){
+    		$("#userphone").blur(function(){
+    			var str = this.value;
+    			var reg = /^[1][3-9]\d{8}\d$/g;
+    			//var reg = /^[1][3,4,5,7,8][0-9]{9}$/g;
+    			if(!reg.test(str)){
+    				alert ( "请输入正确的手机号码");
+    			}
+    		});
+    	}
+    	testF();
+    	
+    	
+    	function passwordF(){
+    		$("#userpassword").blur(function(){
+    			var pStr = this.value;
+    			var pPattern =  /^.*(?=.{6,})(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$%^&*? ]).*$/;
+    			if(!pPattern.test(pStr)){
+    				alert( "请以正确的密码格式输入：最少6位，包括至少1个大写字母，1个小写字母，1个数字，1个特殊字符");
+    			}
+    		});
+    	}
+    	passwordF();
+    })
+    
+    
+    
+    
+    window.onload = function() {
+        $("#userphone").onblur = function () {
+            //1、创建对象
+            let xhr = new XMLHttpRequest();
+
+            //2、设置请求参数
+            xhr.open("get", "loginCheck.php?userphone=" + this.value, true);
+
+            //3、设置回调函数
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    //5、接收响应
+                    let str = xhr.responseText;
+                    if (str == "1") {
+                        $("#uesrnameMessage").innerHTML = "恭喜您，该用户没有人用，赶紧注册吧";
+                    } else {
+                        $("#uesrnameMessage").innerHTML = "亲，不好意思，用户被别人用了，请重新思考";
+                    }
+
+                }
+            }
+
+            //4、发送请求
+
+            xhr.send();
+        }
+    }
+   
 </script>

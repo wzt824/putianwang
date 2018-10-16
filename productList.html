@@ -135,7 +135,7 @@
 	        				<p>冷冻</p>
         				</div>
 					</div>
-        			<ul>
+        			<ul id="ulsBox">
         				<li></li>
         				<li></li>
         				<li></li>
@@ -166,11 +166,36 @@
         			<div class="details_text">
         				<strong>产品详细介绍: </strong>美国&澳洲 安格斯牛肉 家庭组合包含：澳洲 谷饲200天 安格斯 菲力牛排（1-2片装）*1，澳洲 谷饲300天 安格斯 牛肉粒(M5)*3，美国 极佳级 黑安格斯 西冷牛排*2，共六份。超值精选牛肉组合，畅享多种牛肉风味。
         			</div>
-        		</div>
-        		
+        		</div>		
         	</div>
         </div>
-        
+        <!--相关食谱-->
+        <div class="con_intr">
+        	<div class="cookbook">
+        		<p><span>相关食谱</span><a href="#">更多</a></p>
+        		<p>瑞士浓香烩小牛里脊</p>
+        		<div class="cookbookBox">
+        			<div class="cookbookLeft"><img src="img/1438107421317331.jpg"/></div>
+        			<div class="cookbookCen">
+        				<ul class="cookbook-list">
+        					<li>
+        						<div class="cookbook-plus"><i></i></div>
+        						<div class="cookbook-product">
+        							<a href="#"><img src="img/V-0302-0011_s2.jpg" alt="" />百里香</a>
+        							<p></p>
+        						</div>
+        					</li>
+        					<li></li>
+        					<li></li>
+        					<li></li>
+        					<li></li>
+        				</ul>
+        			</div>
+        			<div class="cookbookRight"></div>
+        		</div>
+        	</div>
+        	
+        </div>
       <!-- 	固定不分-->
         <div class="con_fixed">
         	<div class="con_fixedBox">
@@ -191,6 +216,7 @@
         		</div>
         	</div>
         </div>
+        
 	</div>
 	<div class="topBox">
 		<!-- 底部部分 -->
@@ -208,24 +234,59 @@
 		
 		$(".topBox").load("publicBottom.html");
 		
+		//each循环取得其设置css样式
+		$("#ulsBox li").each(function(){
+			$(this).click(function() {
+				//siblings除过本身之外的其他同辈元素
+				$(this).css({border:"1px solid #009c4c"}).siblings().css({border:"1px solid #f0f0f0"});
+				//取值
+				var url = $(this).css("backgroundImage").replace("url(","").replace(")","");
+				//赋值
+				$("#bigBox").css({"backgroundImage":"url(" + url + ")"});
+//				console.log(url);
+				
+				
+				$("#bigBox").mouseenter(function() {
+			        singlton.getInstance({
+				        //要放大的图片对应的dom元素
+			            bigBoxDom:this,
+			            //大图的src 要放大的效果的dom元素的背景图片
+		                bigImg:url,
+		                //要放大图片的宽和高
+		                bigBoxWidth:450,
+		                bigBoxHeight:450,
+		                //放大镜的宽和高
+		                width:225,
+		                height:225,
+		                //放大倍数
+		                multiple:2
+		            });
+		      	});
+			})
+		});
 		
 		
-		$("#bigBox").mouseenter(function() {
-	        singlton.getInstance({
-		        //要放大的图片对应的dom元素
-	            bigBoxDom:this,
-	            //大图的src 要放大的效果的dom元素的背景图片
-                bigImg:"img/1536596681346017_s3.jpg",
-                //要放大图片的宽和高
-                bigBoxWidth:450,
-                bigBoxHeight:450,
-                //放大镜的宽和高
-                width:225,
-                height:225,
-                //放大倍数
-                multiple:2
-            });
-      	});
+      	
+      	
+      	
+      	//累加
+        $(".add").click(function(){
+        	var changeAdd = parseInt($(".numChange")[0].innerHTML);
+        	changeAdd = changeAdd +1;
+			$(".numChange")[0].innerHTML = changeAdd;
+        });
+        
+        //累减
+        $(".reduce").click(function(){
+        	var changeReduce = parseInt($(".numChange")[0].innerHTML);
+        	changeReduce = changeReduce - 1;
+        	if(changeReduce == 0){
+        		return;
+        	}
+			$(".numChange")[0].innerHTML = changeReduce;
+        });
+        
+        
 	});
 	
 	

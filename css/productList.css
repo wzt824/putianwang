@@ -1,3 +1,13 @@
+body, p, ul, ol, dl, dd, h1, h2, h3, h4, h5, h6, td, input, select, option, textarea {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
 .contant {
   height: 100%; }
   .contant .con_nav {
@@ -7,6 +17,7 @@
       display: none; }
   .contant .con_details {
     width: 1106px;
+    overflow: hidden;
     padding: 10px 28px 10px 66px; }
     .contant .con_details .details_up {
       font-size: 14px;
@@ -63,6 +74,12 @@
           float: left; }
         .contant .con_details .details_down .details_down_l ul li:nth-child(1) {
           background-image: url(../img/1536596681346017_s3.jpg);
+          background-size: 70px 70px; }
+        .contant .con_details .details_down .details_down_l ul li:nth-child(2) {
+          background-image: url(../img/beef.png);
+          background-size: 70px 70px; }
+        .contant .con_details .details_down .details_down_l ul li:nth-child(3) {
+          background-image: url(../img/CN-shellfish.png);
           background-size: 70px 70px; }
         .contant .con_details .details_down .details_down_l ul img {
           width: 70px;
@@ -159,6 +176,50 @@
           border-top: 1px solid #f0f0f0;
           border-bottom: 1px solid #f0f0f0;
           line-height: 23px; }
+  .contant .con_intr {
+    font-size: 16px;
+    color: #009c4c;
+    margin-top: 50px;
+    padding: 10px 28px 10px 66px; }
+    .contant .con_intr p {
+      line-height: 38px;
+      border-bottom: 1px solid #DDDDDD; }
+      .contant .con_intr p span {
+        display: inline-block;
+        line-height: 38px;
+        border-bottom: 2px solid #009C4c; }
+      .contant .con_intr p a {
+        color: #737373;
+        float: right; }
+    .contant .con_intr p:nth-child(2) {
+      border-bottom: none; }
+    .contant .con_intr .cookbookBox .cookbookLeft {
+      float: left; }
+      .contant .con_intr .cookbookBox .cookbookLeft img {
+        width: 276px;
+        height: 201px; }
+    .contant .con_intr .cookbookBox .cookbookCen {
+      float: left;
+      width: 625px;
+      overflow-x: scroll; }
+      .contant .con_intr .cookbookBox .cookbookCen .cookbook-list {
+        width: 1250px; }
+        .contant .con_intr .cookbookBox .cookbookCen .cookbook-list li {
+          float: left;
+          width: 150px;
+          height: 185px; }
+          .contant .con_intr .cookbookBox .cookbookCen .cookbook-list li .cookbook-product {
+            padding: 0 0 0 40px;
+            width: 110px;
+            height: 183px; }
+            .contant .con_intr .cookbookBox .cookbookCen .cookbook-list li .cookbook-product a {
+              font-size: 12px;
+              color: #737373;
+              margin-top: 0;
+              line-height: 12px; }
+            .contant .con_intr .cookbookBox .cookbookCen .cookbook-list li .cookbook-product img {
+              width: 110px;
+              height: 110px; }
   .contant .con_fixed {
     width: 100%;
     height: 80px;

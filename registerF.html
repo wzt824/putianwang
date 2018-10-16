@@ -6,7 +6,7 @@
 <title>Document</title>
 </head>
 <body>
-    亲，注册失败，<span id="skipSpan">5</span>秒后<a href="login.html"> 再来一次 </a>！
+    亲，注册失败，<span id="skipSpan">5</span>秒后<a href="register.html"> 再来一次 </a>！
 </body>
 </html>
 <script>
@@ -18,9 +18,9 @@
         let secounds = 5;
         let myTimes = setInterval(function() {
             secounds --;
-            if(secounds<=0){login
+            if(secounds<=0){
                 window.clearInterval(myTimes);
-                location.href = ".html";
+                location.href = "register.html";
             }
             $('skipSpan').innerHTML = secounds;
         },1000);

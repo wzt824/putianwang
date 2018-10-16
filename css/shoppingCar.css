@@ -1,0 +1,22 @@
+body, p, ul, ol, dl, dd, h1, h2, h3, h4, h5, h6, td, input, select, option, textarea {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+.contantBox {
+  width: 100%; }
+  .contantBox .contant {
+    width: 1198px;
+    height: 1200px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    background: white;
+    border: 1px solid #E3E3E3;
+    box-shadow: 0 0 35px #e3e3e3; }
+
+/*# sourceMappingURL=shoppingCar.css.map */
