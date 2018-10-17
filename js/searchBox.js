@@ -9,7 +9,7 @@ window.onscroll = function(){
 			background:"white",
 			display : 'block',
 			position:"fixed",
-			left:47,	
+//			left:47,	
 			top:0,
 			zIndex:10000,
 			marginTop:0

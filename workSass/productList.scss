@@ -218,6 +218,7 @@ li{
     .con_intr{
         font-size: 16px;
         color: #009c4c;
+        overflow: hidden;
         margin-top: 50px;
         padding: 10px 28px 10px 66px;
         p{
@@ -246,7 +247,7 @@ li{
             }
             .cookbookCen{
                 float: left;
-                width: 625px;
+                width: 605px;
                 overflow-x: scroll;
                 .cookbook-list{
                     width: 1250px;
@@ -254,6 +255,19 @@ li{
                         float: left;
                         width: 150px;
                         height:185px;
+                        position: relative;
+                        .cookbook-plus{
+                            b{
+                                display: inline-block;
+                                width: 32px;
+                                height: 32px;
+                                background: url(../img/icons.png);
+                                background-position: 146px 146px;
+                                position: absolute;
+                                left: 0;
+                                top: 72px;
+                            }
+                        }
                         .cookbook-product{
                             padding: 0 0 0 40px;
                             width: 110px;
@@ -263,13 +277,87 @@ li{
                                 color: #737373;
                                 margin-top: 0;
                                 line-height: 12px;
+                                p{
+                                    width: 110px;
+                                    line-height: 0px;
+                                    white-space: nowrap;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                }
                             }
                             img{
                                 width: 110px;
                                 height: 110px;
                             }
+                            span{
+                                width: 17px;
+                                height: 17px;
+                                margin-right: 5px;
+                                background-image:url(../img/icons.png);
+                                background-position:-22px -170px;
+                                border-bottom: none;
+                                display: inline-block;
+                            }
+                            i{
+                                font-style: normal;
+                            }
                         }
                     }
+                }
+            }
+            .cookbookRight{
+                float: left;
+                width: 180px;
+                margin-left: 30px;
+                p{
+                    border-bottom: none;
+                    margin: 70px 0 48px;
+                    strong{
+                        display: inline-block;
+                        width: 30px;
+                        height: 30px;
+                        background: url(../img/icons.png);
+                        background-position: 65px 149px;
+                    }
+                }
+                button{
+                    border: 0;
+                    color: white;
+                    background: #009C4C;
+                    padding: 12px 40px;
+                }
+            }
+        }
+        
+    }
+    .cook_qing{
+        padding: 0 28px 10px 66px;
+        border-top: 1px solid #F0F0F0;
+        .cook_left{
+            width: 377px;
+            float: left;
+        }
+        .cook_right{
+            float: right;
+            width: 808px;
+            padding-left: 20px;
+            border-left: 1px solid #F0F0F0;
+            p{
+                font-size: 16px;
+                color: #009C4C;
+                line-height: 40px;
+                border-bottom: 1px solid #F0F0F0;
+                margin: 10px 0;
+            }
+            span{
+                display: inline-block;
+                line-height: 40px;
+                border-bottom: 1px solid #009c4c;
+            }
+            .cook_right_tp{
+                img{
+                    height: 100%;
+                    width: 100%;
                 }
             }
         }
@@ -278,7 +366,6 @@ li{
         width: 100%;
         height: 80px;
         position: fixed;
-        left: 0;
         top: 0;
 //      display: none;
         .con_fixedBox{

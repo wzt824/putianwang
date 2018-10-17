@@ -387,7 +387,7 @@ input:first-child{
     -ms-border-radius: 50%;
     border-radius: 50%;
 }
-/* contant下的第一部分
+/* contant下的第san部分 固定滚动模块
 con_nav开始 */
 .con_nav{
     margin-top: 15px;
@@ -473,7 +473,7 @@ con_nav开始 */
     top: -11px;
     left: 57px;
 }
-/* contant下的第一部分
+/* contant下的第三部分   滚动固定
 con_scroll开始 */
 .con_scroll{
     width: 1200px;
