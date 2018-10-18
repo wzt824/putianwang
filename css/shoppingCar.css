@@ -132,8 +132,11 @@ li {
         text-align: left; }
       .contantBox .contant .contant_car .car_product li:last-child {
         width: 80px; }
-      .contantBox .contant .contant_car .car_product a {
-        color: #009C4C; }
+      .contantBox .contant .contant_car .car_product b {
+        color: #009C4C;
+        cursor: pointer; }
+      .contantBox .contant .contant_car .car_product b:hover {
+        text-decoration: underline; }
       .contantBox .contant .contant_car .car_product .span_info {
         display: inline-block;
         font-size: 0; }
@@ -187,5 +190,50 @@ li {
           position: absolute;
           right: 48px;
           bottom: 2px; }
+        .contantBox .contant .cont_boon238 .public_imgBox img {
+          width: 220px;
+          height: 220px; }
+    .contantBox .contant .con_accounts {
+      width: 1053px;
+      height: 100px;
+      padding: 0 55px 0 90px;
+      margin-top: 90px;
+      background: #f6f7f7; }
+      .contantBox .contant .con_accounts .acc_left {
+        float: left;
+        width: 286px; }
+        .contantBox .contant .con_accounts .acc_left p {
+          margin-top: 35px;
+          color: #f07641; }
+          .contantBox .contant .con_accounts .acc_left p span {
+            line-height: 18px; }
+            .contantBox .contant .con_accounts .acc_left p span a {
+              color: #009c4c; }
+      .contantBox .contant .con_accounts .acc_right {
+        float: right; }
+        .contantBox .contant .con_accounts .acc_right ul {
+          margin-top: 40px; }
+          .contantBox .contant .con_accounts .acc_right ul li {
+            float: left;
+            margin: 0 15px; }
+            .contantBox .contant .con_accounts .acc_right ul li span {
+              display: inline-block;
+              width: 48px;
+              color: #009C4C;
+              text-align: center; }
+            .contantBox .contant .con_accounts .acc_right ul li i {
+              display: inline-block;
+              width: 30px;
+              height: 30px;
+              background: url(../img/icons.png);
+              background-position: 65px 141px; }
+            .contantBox .contant .con_accounts .acc_right ul li button {
+              width: 125px;
+              height: 40px;
+              line-height: 40px;
+              color: white;
+              border: 0;
+              background: #009C4C;
+              cursor: pointer; }
 
 /*# sourceMappingURL=shoppingCar.css.map */

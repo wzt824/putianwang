@@ -28,10 +28,11 @@
 				<img src="img/cn_pc_zhuceye.png"/>
 			</div>
 			<div class="login_bottom_right">
-				<form class="login_list" action="registerCheck.php" method="post">
+				<form class="login_list" action="php/registerCheck.php" method="post">
 					<ul>
 						<li>
 							<input type="text" name="userphone" id="userphone" placeholder="请填写正确的手机号码" class="m-input m-input-big"/>
+							<p id="hint"></p>
 						</li>
 						<li>
 							<input type="text" placeholder="请输入图形验证码" class="m-input m-input-big"/>
@@ -44,10 +45,12 @@
 							<span class="image-btn clickSendSMS">点击发送短信</span>
 						</li>
 						<li>
-							<input type="password" name="userpassword" id="userpassword" placeholder="请输入密码" class="m-input m-input-big"/>
+							<input type="password" name="userpassword" id="userpassword" placeholder="请输入密码" class="m-input m-input-big onceP"/>
+							<p id="hint"></p>
 						</li>
 						<li>
-							<input type="password" placeholder="确认密码" class="m-input m-input-big"/>
+							<input type="password" id="turePass" placeholder="确认密码" class="m-input m-input-big twoP"/>
+							<p id="hint"></p>
 						</li>
 						<li class="login_uls_li6">
 							<input type="checkbox" id="checkbox_public" class="public_servrse" />
@@ -83,7 +86,21 @@
     			var reg = /^[1][3-9]\d{8}\d$/g;
     			//var reg = /^[1][3,4,5,7,8][0-9]{9}$/g;
     			if(!reg.test(str)){
-    				alert ( "请输入正确的手机号码");
+    				$("#hint").html( "请输入正确的手机号码");
+    				$("#hint").css({
+    					"color":"red",
+    					"fontSize":"12px",
+    					"lineHeight":"24px",
+    					"position":"absolute",
+    					"top":"-30px",
+    					"textIndent":"24px",
+    					"opacity":1,
+    					"zIndex":110
+    					});
+    			}else{
+    				$("#hint").css({
+    					"opacity":0
+    				});
     			}
     		});
     	}
@@ -95,23 +112,50 @@
     			var pStr = this.value;
     			var pPattern =  /^.*(?=.{6,})(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$%^&*? ]).*$/;
     			if(!pPattern.test(pStr)){
-    				alert( "请以正确的密码格式输入：最少6位，包括至少1个大写字母，1个小写字母，1个数字，1个特殊字符");
+//  				$("#hint").html( "请以正确的密码格式输入：最少6位，包括至少1个大写字母，1个小写字母，1个数字，1个特殊字符");
+    				$("#hint").html( "请以正确的密码格式输入：最少6位，包括至少1个大写字母，1个小写字母，1个数字，1个特殊字符");
+    				$("#hint").css({
+    					"color":"red",
+    					"fontSize":"12px",
+    					"lineHeight":"24px",
+    					"position":"absolute",
+    					"top":"-50px",
+    					"opacity":1
+    					});
+    			}else{
+    				$("#hint").css({
+    					"opacity":0
+    				});
     			}
     		});
     	}
     	passwordF();
+    	
+    	
+    	
+    	function passwordT(){
+    		$("#turePass").blur(function(){
+    			var tStr = this.value;
+    			var pStr = $("#userpassword").val();
+    			if(tStr!=pStr){
+    				$("#hint").html("两次密码输入不一致");
+    			}else{
+    				$("#hint").html("两次密码输入正确，快去注册吧！");
+    			}
+    		});
+    	}
+    	passwordT();
     })
     
     
     
-    console.log($("#userpassword").val());
     window.onload = function() {
         $("#userphone").onblur = function () {
             //1、创建对象
             let xhr = new XMLHttpRequest();
 
             //2、设置请求参数
-            xhr.open("get", "loginCheck.php?userphone=" + this.value, true);
+            xhr.open("post", "php/registerCheck.php?userphone=" + this.value, true);
 
             //3、设置回调函数
             xhr.onreadystatechange = function () {
@@ -119,9 +163,12 @@
                     //5、接收响应
                     let str = xhr.responseText;
                     if (str == "1") {
-                        $("#uesrnameMessage").innerHTML = "恭喜您，该用户没有人用，赶紧注册吧";
+                    	var usernameM = $("#uesrnameMessage").innerHTML;
+                        usernameM = "恭喜您，该用户没有人用，赶紧注册吧";
+                        console.log(usernameM);
                     } else {
-                        $("#uesrnameMessage").innerHTML = "亲，不好意思，用户被别人用了，请重新思考";
+                        usernameM = "亲，不好意思，用户被别人用了，请重新思考";
+                        console.log(usernameM);
                     }
 
                 }

@@ -161,8 +161,12 @@ li{
                     width: 80px;
                     
                 }
-                a{
+                b{
                     color: #009C4C;
+                    cursor: pointer;
+                }
+                b:hover{
+                    text-decoration: underline;
                 }
                 .span_info{
                     display: inline-block;
@@ -232,8 +236,65 @@ li{
                     right: 48px;
                     bottom: 2px;
                 }
+                img{
+                    width: 220px;
+                    height: 220px;
+                }
             }
             
+        }
+        .con_accounts{
+            width: 1053px;
+            height: 100px;
+            padding:0 55px 0 90px;
+            margin-top: 90px;
+            background: #f6f7f7;
+            .acc_left{
+                float: left;
+                width: 286px;
+                p{
+                    margin-top: 35px;
+                    color: #f07641;
+                    span{
+                        line-height: 18px;
+                        a{
+                            color: #009c4c;
+                        }
+                    }
+                }
+            }
+            .acc_right{
+                float: right;
+                ul{
+                    margin-top: 40px;
+                    li{
+                        float: left;
+                        margin: 0 15px;
+                        span{
+                            display: inline-block;
+                            width: 48px;
+                            color: #009C4C;
+                            text-align: center;
+                        }
+                        i{
+                            display: inline-block;
+                            width: 30px;
+                            height: 30px;
+                            background: url(../img/icons.png);
+                            background-position: 65px 141px
+                        }
+                        button{
+                            width: 125px;
+                            height: 40px;
+                            line-height: 40px;
+                            color: white;
+                            border: 0;
+                            background: #009C4C;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
         }
     }
 }

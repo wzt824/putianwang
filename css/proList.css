@@ -76,7 +76,7 @@
       .contantDownBox .contantDownBox_r ul li strong {
         margin-left: 20px; }
       .contantDownBox .contantDownBox_r ul li a {
-        isplay: inline-block;
+        display: inline-block;
         margin: 0 15px 15px 15px;
         color: #737373; }
       .contantDownBox .contantDownBox_r ul li .list_ye {
@@ -122,7 +122,8 @@
         background: white; }
 
 .pro_list li {
-  width: 229px;
+  width: 209px;
+  margin: 0 10px;
   height: 300px;
   float: left;
   margin-bottom: 10px;
@@ -134,8 +135,9 @@
       width: 175px;
       height: 175px; }
     .pro_list li .listBox a {
-      margin: 0;
-      font-size: 14px; }
+      margin: 0 !important;
+      height: 43px;
+      font-size: 12px !important; }
     .pro_list li .listBox p {
       font-size: 12px;
       color: #009B4C;
