@@ -28,9 +28,7 @@
   .contantDownBox .contantDownBox_l {
     float: left;
     width: 180px;
-    height: 3050px;
-    padding: 0 20px;
-    border-right: 1px solid #E3E3E3; }
+    padding: 0 20px; }
     .contantDownBox .contantDownBox_l ul {
       text-align: center; }
       .contantDownBox .contantDownBox_l ul p {
@@ -68,8 +66,24 @@
               line-height: 24px; }
         .contantDownBox .contantDownBox_l .contantDownBox_l_b .pro_list .listBox:hover p {
           text-align: left; }
+      .contantDownBox .contantDownBox_l .contantDownBox_l_b .pro_list1 {
+        text-align: center; }
+        .contantDownBox .contantDownBox_l .contantDownBox_l_b .pro_list1 li {
+          width: 129px;
+          height: 280px;
+          margin-bottom: 80px; }
+          .contantDownBox .contantDownBox_l .contantDownBox_l_b .pro_list1 li .public_imgBox {
+            line-height: 0; }
+            .contantDownBox .contantDownBox_l .contantDownBox_l_b .pro_list1 li .public_imgBox #zhongliang {
+              margin-top: 0; }
+            .contantDownBox .contantDownBox_l .contantDownBox_l_b .pro_list1 li .public_imgBox #price {
+              line-height: 24px; }
+        .contantDownBox .contantDownBox_l .contantDownBox_l_b .pro_list1 .listBox1:hover p {
+          text-align: left; }
   .contantDownBox .contantDownBox_r {
-    padding: 0 60px 10px 221px; }
+    margin: 0 0px 10px 221px;
+    overflow: hidden;
+    border-left: 1px solid #E3E3E3; }
     .contantDownBox .contantDownBox_r ul li {
       padding: 12px 0;
       position: relative; }
@@ -83,7 +97,7 @@
         display: inline-block;
         position: absolute;
         top: 5px;
-        right: 0;
+        right: 40px;
         padding: 6px 13px;
         min-width: 100px;
         background: #e2e6e4;
@@ -142,6 +156,44 @@
       font-size: 12px;
       color: #009B4C;
       margin-top: 12px; }
+    .pro_list li .listBox .proId {
+      display: none; }
+    .pro_list li .listBox .listBox_left {
+      position: absolute;
+      left: 0;
+      top: 0; }
+      .pro_list li .listBox .listBox_left img {
+        width: 35px;
+        height: 35px;
+        margin: 10px; }
+      .pro_list li .listBox .listBox_left span {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        color: white;
+        margin: 5px;
+        background: #db2222;
+        line-height: 50px;
+        border-radius: 50%;
+        text-align: center; }
+    .pro_list li .listBox .listBox_right {
+      position: absolute;
+      right: 5px;
+      top: 10px; }
+      .pro_list li .listBox .listBox_right span {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        color: white;
+        line-height: 40px;
+        border-radius: 50%; }
+      .pro_list li .listBox .listBox_right .yj {
+        background: #00B360; }
+      .pro_list li .listBox .listBox_right .jk {
+        background: #70caf3; }
+      .pro_list li .listBox .listBox_right .ld {
+        background: #5b5ce5; }
     .pro_list li .listBox .public_imgBox {
       border-right: none;
       position: relative;
@@ -169,6 +221,95 @@
     left: -7px;
     top: 5px; }
   .pro_list li .listBox:hover .public_caricons {
+    display: block; }
+.pro_list li:last-child {
+  margin-bottom: 30px; }
+
+.pro_list1 li {
+  width: 209px;
+  margin: 0 10px;
+  height: 300px;
+  float: left;
+  margin-bottom: 10px;
+  position: relative; }
+  .pro_list1 li .listBox1 {
+    text-align: center;
+    background: white;
+    position: relative; }
+    .pro_list1 li .listBox1 img {
+      width: 175px;
+      height: 175px; }
+    .pro_list1 li .listBox1 a {
+      margin: 0 !important;
+      height: 43px;
+      font-size: 12px !important; }
+    .pro_list1 li .listBox1 p {
+      font-size: 12px;
+      color: #009B4C;
+      margin-top: 12px; }
+    .pro_list1 li .listBox1 .proId {
+      display: none; }
+    .pro_list1 li .listBox1 .listBox1_left {
+      position: absolute;
+      left: 0;
+      top: 0; }
+      .pro_list1 li .listBox1 .listBox1_left img {
+        width: 35px;
+        height: 35px; }
+      .pro_list1 li .listBox1 .listBox1_left span {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        color: white;
+        margin: 5px;
+        background: #db2222;
+        line-height: 50px;
+        text-align: center; }
+    .pro_list1 li .listBox1 .listBox1_right {
+      position: absolute;
+      right: 0;
+      top: 0; }
+      .pro_list1 li .listBox1 .listBox1_right span {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        color: white;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%; }
+      .pro_list1 li .listBox1 .listBox1_right .yj {
+        background: #00B360; }
+      .pro_list1 li .listBox1 .listBox1_right .jk {
+        background: #70caf3; }
+      .pro_list1 li .listBox1 .listBox1_right .ld {
+        background: #5b5ce5; }
+    .pro_list1 li .listBox1 .public_imgBox {
+      border-right: none;
+      position: relative;
+      height: 100%;
+      width: 100%;
+      padding: 0; }
+      .pro_list1 li .listBox1 .public_imgBox span {
+        font-size: 12px; }
+      .pro_list1 li .listBox1 .public_imgBox .public_caricons {
+        position: absolute;
+        right: 0;
+        bottom: 275px;
+        z-index: 101;
+        display: none; }
+      .pro_list1 li .listBox1 .public_imgBox #price {
+        margin-top: 0; }
+  .pro_list1 li .listBox1:hover {
+    width: 165px;
+    padding: 0 30px;
+    height: 340px;
+    box-shadow: 0 0 10px gray;
+    position: absolute;
+    text-align: left;
+    z-index: 10;
+    left: -7px;
+    top: 5px; }
+  .pro_list1 li .listBox1:hover .public_caricons {
     display: block; }
 
 /*# sourceMappingURL=proList.css.map */

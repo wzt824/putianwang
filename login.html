@@ -5,9 +5,11 @@
 	<title>用户登录</title>
     <link rel="stylesheet" type="text/css" href="css/public.css" />
     <link rel="stylesheet" type="text/css" href="css/login.css"/>
-    <link rel="stylesheet" type="text/css" href="css/register.css"/>
+    <link rel="stylesheet" type="text/css" href="css/reg.css"/>
 </head>
+<script src="js/cookie.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/jquery-1.8.3.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/login.js" type="text/javascript" charset="utf-8"></script>
 <body>
 	<div class="login_top">
 		<div class="headerBox">
@@ -22,20 +24,22 @@
 	<div class="login_bottom">
 		<div class="login_btop_public">
 			<h1>FIELDS 登录</h1>
-			<span><a href="register.html">没有账号？注册</a></span>
+			<span><a href="reg.html">没有账号？注册</a></span>
 		</div>
 		<div class="login_bottom_public" >
 			<div class="login_bottom_left">
 				<img src="img/cn.jpg"/>
 			</div>
 			<div class="login_bottom_right">
-				<form class="login_list" action="php/loginCheck.php" method="post">
+				<div class="login_list">
 					<ul>
 						<li>
-							<input type="text" name="userphone" id="userphone" placeholder="E-mail/手机号" class="m-input m-input-big"/>
+							<input type="text" id="userphone" placeholder="手机号" class="m-input m-input-big"/>
+							<p id="hint"></p>
 						</li>
 						<li>
-							<input type="password" name="userpassword" id="userpassword" placeholder="密码" class="m-input m-input-big"/>
+							<input type="password" id="userpassword" placeholder="密码" class="m-input m-input-big"/>
+							<p id="hint"></p>
 						</li>
 						<li class="login_uls_li6">
 							<input type="checkbox" name="" id="checkbox_public" class="public_servrse" />
@@ -44,10 +48,10 @@
 							》</p>
 						</li>
 						<li class="oncereg">
-							<input type="submit" id="submit" value="登录"></input>
+							<input type="button" id="btn" value="登录">
 						</li>
 					</ul>
-				</form>
+				</div>
 			</div>
 			<div class="login_public_bottom">
 				<span>&copy; 2009-2018 FIELDS CHINA. All Rights Reserved 沪ICP备10215492号-3</span>
@@ -59,5 +63,34 @@
 <script type="text/javascript">
 	$(".headerBox").load("publicTop.html");
 	
-	
+	//window.onload = function(){
+	$(function () {
+        $(".oncereg")[0].onclick= function(){
+            //1、创建对象
+            let xhr = new XMLHttpRequest();
+            //2、设置请求参数
+            xhr.open("post","php/loginCheck.php",true);
+            
+            //3、设置回调函数
+            xhr.onreadystatechange = function(){
+                if(xhr.readyState==4 && xhr.status==200){
+                    //5、接收响应
+                    let str = xhr.responseText;
+                    if(str=="1"){
+                        location.href="index.html";
+                    }else{
+                    	alert("登录失败");
+                    }
+                }
+            }
+            
+            xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+            
+            //4、发送请求
+            let str = "userphone="+$("#userphone").val()+"&userpassword="+$("#userpassword").val();
+            xhr.send(str);
+
+            setCookie("userphone",$("#userphone").val(),21);
+        }
+    });
 </script>

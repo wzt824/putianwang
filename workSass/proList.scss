@@ -29,9 +29,7 @@
     .contantDownBox_l{
         float: left;
         width: 180px;
-        height: 3050px;
         padding: 0 20px;
-        border-right:1px solid #E3E3E3 ;
         ul{
             text-align: center;
             p{
@@ -84,10 +82,33 @@
                     text-align: left;
                 }
             }
+            
+            .pro_list1{
+            text-align: center;
+                li{
+                    width: 129px;
+                    height: 280px;
+                    margin-bottom: 80px;
+                    .public_imgBox{
+                        line-height: 0;
+                        #zhongliang{
+                            margin-top: 0;
+                        }
+                        #price{
+                            line-height: 24px;
+                        }
+                    }
+                }
+                .listBox1:hover p{
+                    text-align: left;
+                }
+            }
         }
     }
     .contantDownBox_r{
-        padding:0 60px 10px 221px;
+        margin:0 0px 10px 221px;
+        overflow: hidden;
+        border-left: 1px solid #E3E3E3;
         ul{
             li{
                 padding: 12px 0;
@@ -104,7 +125,7 @@
                     display: inline-block;
                     position: absolute;
                     top: 5px;
-                    right: 0;
+                    right: 40px;
                     padding: 6px 13px;
                     min-width: 100px;
                     background: #e2e6e4;
@@ -178,6 +199,54 @@
                 color: #009B4C;
                 margin-top: 12px;
             }
+            .proId{
+                display: none;
+            }
+            .listBox_left{
+                position: absolute;
+                left: 0;
+                top: 0;
+                img{
+                    width: 35px;
+                    height: 35px;
+                    margin: 10px;
+                }
+                span{
+                    display: inline-block;
+                    width: 50px;
+                    height: 50px;
+                    color: white;
+                    margin: 5px;
+                    background: #db2222;
+                    line-height: 50px;
+                    border-radius: 50%;
+                    text-align: center;
+                }
+            }
+            .listBox_right{
+                position: absolute;
+                right: 5px;
+                top: 10px;
+                span{
+                    display: inline-block;
+                    width: 40px;
+                    height: 40px;
+                    text-align: center;
+                    color: white;
+                    line-height: 40px;
+                    border-radius: 50%;
+                }
+                    
+                    .yj{
+                        background: #00B360;
+                    }
+                    .jk{
+                        background: #70caf3;
+                    }
+                    .ld{
+                        background: #5b5ce5;
+                    }
+            }
             .public_imgBox{
                 border-right: none;
                 position: relative;
@@ -211,6 +280,118 @@
             top:5px;
         }
         .listBox:hover .public_caricons{
+            display: block;
+        }
+    }
+    li:last-child{
+        margin-bottom: 30px;
+    }
+}
+.pro_list1{
+    li{
+        width: 209px;
+        margin: 0 10px;
+        height: 300px;
+        float: left;
+        margin-bottom: 10px;
+        position: relative;
+        .listBox1{
+            text-align: center;
+            background: white;
+            position: relative;
+            img{
+                width: 175px;
+                height: 175px;
+            }
+            a{
+                margin: 0!important;
+                height: 43px;
+                font-size: 12px!important;
+            }
+            p{
+                font-size: 12px;
+                color: #009B4C;
+                margin-top: 12px;
+            }
+            .proId{
+                display: none;
+            }
+            .listBox1_left{
+                position: absolute;
+                left: 0;
+                top: 0;
+                img{
+                    width: 35px;
+                    height: 35px;
+                }
+                span{
+                    display: inline-block;
+                    width: 50px;
+                    height: 50px;
+                    color: white;
+                    margin: 5px;
+                    background: #db2222;
+                    line-height: 50px;
+                    text-align: center;
+                }
+            }
+            .listBox1_right{
+                position: absolute;
+                right: 0;
+                top: 0;
+                span{
+                    display: inline-block;
+                    width: 40px;
+                    height: 40px;
+                    color: white;
+                    text-align: center;
+                    line-height: 40px;
+                    border-radius: 50%;
+                }
+                    
+                    .yj{
+                        background: #00B360;
+                    }
+                    .jk{
+                        background: #70caf3;
+                    }
+                    .ld{
+                        background: #5b5ce5;
+                    }
+            }
+            .public_imgBox{
+                border-right: none;
+                position: relative;
+                height: 100%;
+                width: 100%;
+                padding: 0;
+                span{
+                    font-size: 12px;
+                }
+                .public_caricons{
+                    position: absolute;
+                    right: 0;
+                    bottom:275px;
+                    z-index:101;
+                    display: none;
+                }
+                #price{
+                    margin-top: 0;
+                }
+            }
+        }
+        .listBox1:hover{
+            width: 165px;
+            padding: 0 30px;
+            height: 340px;
+            box-shadow: 0 0 10px gray;
+            position: absolute;
+            text-align: left;
+            z-index:10;
+            left:-7px;
+            top:5px;
+        }
+        .listBox1:hover .public_caricons{
             display: block;
         }
     }

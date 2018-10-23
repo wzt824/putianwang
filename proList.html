@@ -9,6 +9,7 @@
 	</head>
 <script src="js/jquery-1.8.3.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/searchBox.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/cookie.js" type="text/javascript" charset="utf-8"></script>
 	<body>
 		<div class="headerBox">
 			<!--头部部分-->
@@ -25,7 +26,7 @@
 	        <div class="contantDownBox">
 	        	<div class="contantDownBox_l">
 	        		<ul>
-	        			<p>田园时蔬</p>
+	        			<p class="pross">田园时蔬</p>
 	        			<li><a href="#">叶菜类</a><i></i></li>
 	        			<li><a href="#">花草类</a><i></i></li>
 	        			<li><a href="#">根茎类</a><i></i></li>
@@ -44,10 +45,19 @@
 	        		</ul>
 	        		<div class="contantDownBox_l_b">
 	        			<h2>猜你喜欢</h2>
-	        			<ul class="pro_list">
+	        			<ul class="pro_list1">
 	        				<li>
-	        					<div class="listBox">
+	        					<div class="listBox1">
 		        					<img src="img/pro_list/1498471576955110.jpg" alt="" />
+		        					<!--<div class="listBox1_left">
+		        						<span>打折</span>
+		        						<img src="img/ririxianbiaoqian.jpg" alt="" />
+		        					</div>
+		        					<div class="listBox1_right">
+		        						<span class="yj">进口</span>
+		        						<span class="jk">出口</span>
+		        						<span class="ld">花花</span>
+		        					</div>-->
 		        					<a href="#"><h3>Fields精选 青菜</h3></a>
 		        					<p>清脆鲜嫩 柔软多汁</p>
 		        					<div class="public_imgBox">
@@ -59,9 +69,13 @@
 		        				</div>
 	        				</li>
 	        				<li>
-	        					<div class="listBox">
-		        					<img src="img/pro_list/1433521077455539_s2.jpg" alt="" />
-		        					<a href="#"><h3>Fields精选 青菜</h3></a>
+	        					<div class="listBox1">
+	        						<a href="javascript:;" class="proId">
+	        							<span class="proId">goodsId</span>
+	        							<img src="img/pro_list/1433521077455539_s2.jpg" alt="" />
+		        						<a href="javascript:;"><h3>Fields精选 青菜</h3></a>
+	        						</a>
+		        					
 		        					<p>清脆鲜嫩 柔软多汁</p>
 		        					<div class="public_imgBox">
 		        						<p id="zhongliang">250克</p>
@@ -72,7 +86,7 @@
 		        				</div>
 	        				</li>
 	        				<li>
-	        					<div class="listBox">
+	        					<div class="listBox1">
 		        					<img src="img/pro_list/1524130775171461_s2.jpg" alt="" />
 		        					<a href="#"><h3>Fields精选 青菜</h3></a>
 		        					<p>清脆鲜嫩 柔软多汁</p>
@@ -85,7 +99,7 @@
 		        				</div>
 	        				</li>
 	        				<li>
-	        					<div class="listBox">
+	        					<div class="listBox1">
 		        					<img src="img/pro_list/141118161.jpg" alt="" />
 		        					<a href="#"><h3>Fields精选 青菜</h3></a>
 		        					<p>清脆鲜嫩 柔软多汁</p>
@@ -121,7 +135,7 @@
 	        			</li>
 	        		</ul>
 	        		<ul class="pro_list">
-	        			
+	        			<!--动态从数据库获取所需数据-->
 	        		</ul>
 	        	</div>
 	        </div>
@@ -131,6 +145,7 @@
 	    </div>
 	</body>
 </html>
+<script src="js/cookie.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
 	$(function(){
 		//载入远程 publicTop.html 文件代码并插入至 .headerBox 中
@@ -144,11 +159,10 @@
 		
 	
 	});
+
 	
-//	window.onload = function(){
-//		var lisDom = document.createElement("li");
-//		
-//	}
+	getCookie("selectPro");
+//	console.log(uiu);
 	
 	///
 	$.ajax({
@@ -157,30 +171,86 @@
 		async:true,
 		data:null,
 		success:function(data){
+			console.log(data);
 			var productlist = '';
 			for(var i=0;i<data.length;i++){
-				productlist+="<li>\
-					<div class='listBox'>\
-						<img src='"+data[i].goodsImg+"' />\
-						<a href='#'>\
-							<h3>"+data[i].goodsName+"</h3>\
-						</a>\
-						<p>"+data[i].goodsDesc+"</p>\
-						<div class='public_imgBox'>\
-							<p id='zhongliang'>"+data[i].beiyong5+"</p>\
-							<span>"+data[i].beiyong3+"</span>\
-							<p id='price'>￥"+data[i].goodsPrice+"</p>\
-							<a href='#'>\
-								<div class='public_caricons'></div>\
-							</a>\
+				console.log(data[i].goodsType == getCookie("selectPro"));
+				if(data[i].goodsType == getCookie("selectPro")){
+					productlist+="<li>\
+						<div class='listBox'>\
+						<span class='proId' style='display:none;'>"+data[i].goodsId+"</span>\
+							<a href='javascript:;'>\
+    							<img src='"+data[i].goodsImg+"' alt='' />\
+        						<a href='javascript:;'>\
+        							<h3>"+data[i].goodsName+"</h3>\
+        						</a>\
+    						</a>\
+							<div class='listBox_left'>\
+	    						<span>"+data[i].beiyong6+"</span>\
+	    						<img src='"+data[i].beiyong7+"' />\
+	    					</div>\
+	    					<div class='listBox_right'>\
+	    						<span class='yj'>"+data[i].beiyong11+"</span>\
+	    						<span class='jk'>"+data[i].beiyong12+"</span>\
+	    						<span class='ld'>"+data[i].beiyong13+"</span>\
+	    					</div>\
+							<p>"+data[i].goodsDesc+"</p>\
+							<div class='public_imgBox'>\
+								<p id='zhongliang'>"+data[i].beiyong5+"</p>\
+								<span>"+data[i].beiyong3+"</span>\
+								<p id='price'>￥"+data[i].goodsPrice+"</p>\
+								<a href='#'>\
+									<div class='public_caricons'></div>\
+								</a>\
+							</div>\
 						</div>\
-					</div>\
-				</li>";
-				$(".pro_list").html(productlist);
+					</li>";
+					$(".pro_list").html(productlist);
+					
+					
+				//循环去除
+				var spans =  $(".listBox_right span");
+				for(var j=0;j<spans.length;j++){
+					var zhi = spans[j].innerHTML;
+						//console.log(zhi);
+					if(zhi==0){
+						spans[j].remove();
+					}
+				}
+				
+				var spanstr =  $(".listBox_left span");
+				for(var j=0;j<spanstr.length;j++){
+					var zhi = spanstr[j].innerHTML;
+						//console.log(zhi);
+					if(zhi==0){
+						spanstr[j].remove();
+					}
+				}
+				
+				
+				$(".listBox_left").each(function(){
+					if($(this).find("img").attr("src")==0){
+						$(this).find("img").remove();
+					}
+				});
+			
+				}
 			}
 			
+			
+			$(".listBox").each(function(){
+				$(this).click(function(){
+					var proIds = $(this).find(".proId").html();
+					
+//					setCookie("proXq",proIds,-1);
+					setCookie("proXq",proIds,1);
+					window.open("productPart.html");
+				});
+			});
 		},
 		dataType:"json"
 	});	
+	
+	
 
 </script>

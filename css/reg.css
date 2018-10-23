@@ -62,7 +62,15 @@ a {
   height: 66px !important;
   margin-bottom: 30px;
   position: relative; }
-
+/*.login_list li:first-child{
+	margin-bottom: 0;
+}*/
+#messageBox{
+	width: 402px;
+	height: 30px;
+	color: red;
+	display: none;
+}
 .login_list .m-input {
   text-indent: 8px;
   outline: 1px solid #009C4B !important;
@@ -105,17 +113,19 @@ a {
   margin-bottom: 0; }
 
 .login_list ul .oncereg {
-  border: 0;
-  outline: none;
-  width: 402px;
+  margin-top: 20px;
   height: 66px;
   cursor: pointer;
   text-align: center;
-  line-height: 40px;
-  background: #009C4B !important; }
+  line-height: 40px; }
 
-#submit {
+#btn {
+  border: 0;
+  outline: none;
+  width: 402px;
+  background: #009C4B;
   color: white;
+  cursor: pointer;
   font-size: 24px;
   display: inline-block;
   height: 66px !important; }

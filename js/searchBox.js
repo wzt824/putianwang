@@ -1,7 +1,7 @@
 //滚动条效果
 window.onscroll = function(){
 	var temp = document.body.scrollTop || document.documentElement.scrollTop;
-	console.log(temp);
+	//console.log(temp);
 	//		当你滚轮滚到214px的时候,以下显示
 	if(temp >= 244){
 		//productList页面菜单栏

@@ -104,6 +104,7 @@ li {
             vertical-align: middle;
             display: inline-block; }
         .contantBox .contant .contant_car ul li:nth-child(1) {
+          cursor: pointer;
           width: 210px;
           padding-left: 20px; }
         .contantBox .contant .contant_car ul li:nth-child(2) {

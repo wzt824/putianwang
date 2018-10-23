@@ -33,20 +33,46 @@ li {
         .contant .con_details .details_down .details_down_l #bigBox {
           position: relative;
           width: 450px;
-          height: 450px;
-          background-image: url(../img/1536596681346017_s3.jpg);
-          background-size: 450px 450px; }
-          .contant .con_details .details_down .details_down_l #bigBox .left_zhe {
+          height: 450px; }
+          .contant .con_details .details_down .details_down_l #bigBox img {
+            width: 450px;
+            height: 450px; }
+          .contant .con_details .details_down .details_down_l #bigBox .listBox_left {
             position: absolute;
-            top: 10px;
-            width: 65px;
-            height: 65px;
-            border-radius: 50%;
-            background: #db2222;
-            font-size: 20px;
-            color: #ffffff;
-            text-align: center;
-            line-height: 65px; }
+            left: 0;
+            top: 0; }
+            .contant .con_details .details_down .details_down_l #bigBox .listBox_left #small_position {
+              width: 35px;
+              height: 35px;
+              margin: 10px; }
+            .contant .con_details .details_down .details_down_l #bigBox .listBox_left span {
+              display: inline-block;
+              width: 50px;
+              height: 50px;
+              color: white;
+              margin: 5px;
+              background: #db2222;
+              line-height: 50px;
+              border-radius: 50%;
+              text-align: center; }
+          .contant .con_details .details_down .details_down_l #bigBox .listBox_right {
+            position: absolute;
+            right: 5px;
+            top: 10px; }
+            .contant .con_details .details_down .details_down_l #bigBox .listBox_right span {
+              display: inline-block;
+              width: 40px;
+              height: 40px;
+              text-align: center;
+              color: white;
+              line-height: 40px;
+              border-radius: 50%; }
+            .contant .con_details .details_down .details_down_l #bigBox .listBox_right .yj {
+              background: #00B360; }
+            .contant .con_details .details_down .details_down_l #bigBox .listBox_right .jk {
+              background: #70caf3; }
+            .contant .con_details .details_down .details_down_l #bigBox .listBox_right .ld {
+              background: #5b5ce5; }
           .contant .con_details .details_down .details_down_l #bigBox .right_pos {
             width: 100px;
             position: absolute;
@@ -72,15 +98,6 @@ li {
           border: 1px solid #f0f0f0;
           margin-right: 10px;
           float: left; }
-        .contant .con_details .details_down .details_down_l ul li:nth-child(1) {
-          background-image: url(../img/1536596681346017_s3.jpg);
-          background-size: 70px 70px; }
-        .contant .con_details .details_down .details_down_l ul li:nth-child(2) {
-          background-image: url(../img/beef.png);
-          background-size: 70px 70px; }
-        .contant .con_details .details_down .details_down_l ul li:nth-child(3) {
-          background-image: url(../img/CN-shellfish.png);
-          background-size: 70px 70px; }
         .contant .con_details .details_down .details_down_l ul img {
           width: 70px;
           height: 70px; }
@@ -361,4 +378,4 @@ li {
             -ms-border-radius: 50%;
             border-radius: 50%; }
 
-/*# sourceMappingURL=productList.css.map */
+/*# sourceMappingURL=productPart.css.map */

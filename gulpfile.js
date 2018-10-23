@@ -39,7 +39,10 @@ gulp.task("copy-font",function(){
 	gulp.src("font/**/*")
 	.pipe(gulp.dest("D:\\phpStudy\\PHPTutorial\\WWW\\putianwang\\font"));
 });
-
+gulp.task("copy-php",function(){
+	gulp.src("php/**/*")
+	.pipe(gulp.dest("D:\\phpStudy\\PHPTutorial\\WWW\\putianwang\\php"));
+});
 
 
 // //合并js文件
@@ -78,7 +81,7 @@ gulp.task("sass",function(){
 
 
 // build全部
-gulp.task("build",["copy-html","copy-img","copy-js","copy-css","copy-font"],function(){
+gulp.task("build",["copy-html","copy-img","copy-js","copy-css","copy-font","copy-php"],function(){
 	console.log("OK");
 });
 // gulp.task("build",["copy-html","copy-img"],function(){
@@ -92,5 +95,7 @@ gulp.task("watchall",function(){
 	gulp.watch("css/**/*",["copy-css"]);
 	gulp.watch("img/**/*",["copy-img"]);
 	gulp.watch("js/**/*",["copy-js"]);
-	gulp.watch("workSass/**/*.scss",["sass"]);
+	gulp.watch("php/**/*",["copy-php"]);
+	gulp.watch("font/**/*",["copy-font"]);
+	//gulp.watch("workSass/**/*.scss",["sass"]);
 });

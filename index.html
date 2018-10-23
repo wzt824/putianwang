@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="css/public.css" />
     <link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
 </head>
+<script src="js/cookie.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/jquery-1.8.3.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/slider.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/searchBox.js" type="text/javascript" charset="utf-8"></script>
@@ -659,4 +660,10 @@
 	//载入远程 publicContant.html 文件代码并插入至 .contantBox 中
 	$(".contantBox").load("publicContant.html");
 	
+	
+	setCookie("name","wzt",7);
+	
+//	console.log(document.cookie)
+
+
 </script>
